@@ -1,0 +1,144 @@
+{
+  "Id": 58,
+  "Unk1": 18,
+  "Mira": 5000,
+  "Dp": 3,
+  "Unk2": 10,
+  "Unk3": 0,
+  "Unk4": 1040,
+  "Unk5": 1055,
+  "QuestName": "终极面包对决！",
+  "Client": "摩尔吉",
+  "ReqBoardContent": "　面包咖啡馆《摩尔吉》\n　这次要举办\n　两位面包师的对决。\n　比赛方法很简单。\n　\n　『究竟谁能做出\n　　比较好吃的面包』，\n　也就是终极面包对决。\n　\n　可想而知，\n　要制作终极的面包，\n　会需要终极的材料。\n　\n　所以，\n　想拜托帮忙收集终极材料。\n　详情请来西侧大道的\n　面包咖啡馆《摩尔吉》，\n　询问店主摩尔吉。",
+  "pProcessContents": [],
+  "ProcessContents": [
+    {
+      "HasAddress": true,
+      "Content": "★去询问摩尔吉先生详情。\n　他好像要奥斯卡和贝奈特\n　两人自由发挥制作面包，\n　以面包师的技术一较高下，\n　所以希望我们收集材料。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★承接收集面包对决材料的委托。\n　虽然数量有点多，但会努力收集。\n　【奥斯卡】　　　　　　　　　　　　\n　・５个『魔兽兽肉』　　　　　　\n　・３个『魔兽明胶』　　　　\n　・３条『银伞鱼』　　　　　　\n　【贝奈特】　　　　　　　　　　　　\n　・３个『魔兽鱼肉』　　　　　　　\n　・５个『魔兽之蛋』　　　　　　　\n　・３条『蓝带神仙鱼』　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★奥斯卡似乎对面包对决　　　\n　选择的材料不是很满意。　　　\n　希望能够加上『热情』……"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★贝奈特似乎对制作　　\n　新面包的构想非常热衷。　　　　　　　　　　\n　希望能做出让吃的人　\n　感动『哭泣』的面包……　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★将收集到的材料交给摩尔吉先生。\n　这样就完成支援请求，　\n　但结果让人在意，　　　　\n　之后再去趟面包咖啡馆《摩尔吉》　　　\n　看看情况吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★给了奥斯卡　　　　　　　\n　『提味』的慰问品。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★给了贝奈特\n　『提味』的慰问品。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★给了奥斯卡和贝奈特\n　『提味』的慰问品。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★终极面包对决的结果\n　差不多要出来了……\n　去一趟面包咖啡馆《摩尔吉》吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★面包对决的结果是　　　　　\n　奥斯卡得到胜利。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★面包对决的结果是　　　　　\n　贝奈特得到胜利。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★面包对决的结果是平分秋色。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★『提味』的慰问品　　　　　　\n　似乎成了分出胜负的关键。　　\n　好像有点不太公平。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★或许是搞错『提味』的慰问品　\n　影响了胜负的走向。\n　做了一件坏事呢。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★来不及知道面包对决的结果。\n　下次还会举办的话，　　　　　\n　得要更早去才行。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "16"
+    },
+    {
+      "HasAddress": true,
+      "Content": "17"
+    },
+    {
+      "HasAddress": true,
+      "Content": "18"
+    },
+    {
+      "HasAddress": true,
+      "Content": "19"
+    },
+    {
+      "HasAddress": true,
+      "Content": "20"
+    },
+    {
+      "HasAddress": true,
+      "Content": "21"
+    },
+    {
+      "HasAddress": true,
+      "Content": "22"
+    },
+    {
+      "HasAddress": true,
+      "Content": "23"
+    },
+    {
+      "HasAddress": true,
+      "Content": "24"
+    },
+    {
+      "HasAddress": true,
+      "Content": "25"
+    },
+    {
+      "HasAddress": true,
+      "Content": "26"
+    },
+    {
+      "HasAddress": true,
+      "Content": "27"
+    },
+    {
+      "HasAddress": true,
+      "Content": "28"
+    },
+    {
+      "HasAddress": true,
+      "Content": "29"
+    },
+    {
+      "HasAddress": true,
+      "Content": "30"
+    },
+    {
+      "HasAddress": true,
+      "Content": "31"
+    },
+    {
+      "HasAddress": true,
+      "Content": "32"
+    }
+  ]
+}

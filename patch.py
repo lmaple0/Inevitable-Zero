@@ -874,7 +874,7 @@ argp.add_argument("outpath", type=Path, help="Directory to place the patched fil
 argp.add_argument("--minigame", action="store_true", help="Patches in dialogue for certain furniture in the headquarters. The minigames are not implemented, so it is simply a fade to black.")
 argp.add_argument("--no-misc", dest="misc", action="store_false", help="Include only the quests, and not the miscellaneous minor patches")
 argp.add_argument("-d", "--dump", dest="dumpdir", type=Path, help="Directory to place scenario dumps in, for all scenarios affected by the patch. Will be emptied.")
-argp.add_argument("--cn", action="store_true", help="Build only the Chinese path from official CLE Traditional Chinese Vita data")
+argp.add_argument("--cn", action="store_true", help="Build only the Chinese path from official Sony-published Traditional Chinese Vita data")
 argp.add_argument("--vita-charmap", type=Path, help="Expanded Vita Traditional Chinese character map")
 argp.add_argument("--zcodec", type=Path, help="zeroTool zCodec executable used for OpenCC Tw2Sp conversion")
 def __main__(vitapath, pcpath, portraitpath, outpath, minigame, misc, dumpdir, cn, vita_charmap, zcodec):

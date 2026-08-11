@@ -160,9 +160,10 @@ def pprint(f, data, mode, *, vals={}, indent=0):
 argp = argparse.ArgumentParser()
 argp.add_argument("-d", "--diff", dest="dump_mode", action="store_const", const="diff", help="Exclude all translatable strings, to get more useful diffs")
 argp.add_argument("-m", "--mode", choices=["jp", "geofront", "vita", "2022"], required=True, help="Which game to decompile")
+argp.add_argument("--encoding", default="cp932", help="Text encoding used by the scenario files (for example: gbk)")
 argp.add_argument("inpath", type=Path, help="Path to scenario directory. This should almost certainly be named \"scena\"")
 argp.add_argument("outpath", type=Path, help="Directory to place decompiled scripts in. Will be cleared.")
-def __main__(dump_mode, mode, inpath, outpath):
+def __main__(dump_mode, mode, encoding, inpath, outpath):
 	if not inpath.is_dir():
 		raise ValueError("inpath must be a directory")
 
@@ -184,6 +185,7 @@ def __main__(dump_mode, mode, inpath, outpath):
 		with file.open("rb") as f:
 			params = {
 				"_insns": insns,
+				"_encoding": encoding,
 			}
 			if mode == "geofront" and file.stem in scena.geofront_tweaks:
 				params["_geofront_tweaks"] = scena.geofront_tweaks[file.stem]

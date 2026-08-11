@@ -1,0 +1,144 @@
+{
+  "Id": 55,
+  "Unk1": 19,
+  "Mira": 1500,
+  "Dp": 2,
+  "Unk2": 15,
+  "Unk3": 0,
+  "Unk4": 1292,
+  "Unk5": 1307,
+  "QuestName": "寻找某人",
+  "Client": "米修拉姆工作人员",
+  "ReqBoardContent": "　请紧急找寻某位人物！　　\n　\n　为了守护孩子们的梦想，　　　\n　还请务必帮忙！　　　　　\n　\n　我会在《米修拉姆》的\n　主题乐园等待！　　　　　　　　　　　",
+  "pProcessContents": [],
+  "ProcessContents": [
+    {
+      "HasAddress": true,
+      "Content": "★向主题公园的工作人员了解经过。\n　据说米修拉姆的吉祥物　\n　《咪西》不见了。\n　特别是缇欧表现出　　\n　要搜索《咪西》的意愿……　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★开始偷偷找寻《咪西》。\n　虽然应该不会去太远的地方，\n　但有可能会搭船离开。\n　先去码头收集情报吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★得到《咪西》前往　　　　　\n　时装店的目击情报。\n　似乎四处跑来跑去……　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★《咪西》似乎走进了饭店。\n　根据有人听到他喊叫的证词，　\n　可以肯定一定有发生什么事。\n　最好快点找到他。　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★《咪西》好像　　　　\n　边跳着诡异的舞蹈　　　　　　\n　边前往高级住宅区了。　　　\n　到底发生了什么事……？　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★在高级住宅区发现《咪西》。　\n　会跑来跑去是因为蜜蜂的关系。\n　还是别和缇欧说\n　玩偶装里面有人吧……　　　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "07"
+    },
+    {
+      "HasAddress": true,
+      "Content": "08"
+    },
+    {
+      "HasAddress": true,
+      "Content": "09"
+    },
+    {
+      "HasAddress": true,
+      "Content": "10"
+    },
+    {
+      "HasAddress": true,
+      "Content": "11"
+    },
+    {
+      "HasAddress": true,
+      "Content": "12"
+    },
+    {
+      "HasAddress": true,
+      "Content": "13"
+    },
+    {
+      "HasAddress": true,
+      "Content": "14"
+    },
+    {
+      "HasAddress": true,
+      "Content": "15"
+    },
+    {
+      "HasAddress": true,
+      "Content": "16"
+    },
+    {
+      "HasAddress": true,
+      "Content": "17"
+    },
+    {
+      "HasAddress": true,
+      "Content": "18"
+    },
+    {
+      "HasAddress": true,
+      "Content": "19"
+    },
+    {
+      "HasAddress": true,
+      "Content": "20"
+    },
+    {
+      "HasAddress": true,
+      "Content": "21"
+    },
+    {
+      "HasAddress": true,
+      "Content": "22"
+    },
+    {
+      "HasAddress": true,
+      "Content": "23"
+    },
+    {
+      "HasAddress": true,
+      "Content": "24"
+    },
+    {
+      "HasAddress": true,
+      "Content": "25"
+    },
+    {
+      "HasAddress": true,
+      "Content": "26"
+    },
+    {
+      "HasAddress": true,
+      "Content": "27"
+    },
+    {
+      "HasAddress": true,
+      "Content": "28"
+    },
+    {
+      "HasAddress": true,
+      "Content": "29"
+    },
+    {
+      "HasAddress": true,
+      "Content": "30"
+    },
+    {
+      "HasAddress": true,
+      "Content": "31"
+    },
+    {
+      "HasAddress": true,
+      "Content": "32"
+    }
+  ]
+}

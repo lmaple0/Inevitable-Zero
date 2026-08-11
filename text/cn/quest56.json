@@ -1,0 +1,144 @@
+{
+  "Id": 56,
+  "Unk1": 18,
+  "Mira": 3000,
+  "Dp": 3,
+  "Unk2": 9,
+  "Unk3": 0,
+  "Unk4": 1040,
+  "Unk5": 1055,
+  "QuestName": "寻找贪睡医师",
+  "Client": "玛萨护士长",
+  "ReqBoardContent": "　我们这里以贪睡出名的亚苏拉主任\n　过了中午都还没来上班。\n　\n　有请总是负责叫醒她的玛洛妮\n　去宿舍看看情况，\n　但房间里空无一人。\n　\n　虽然主任经常迟到，\n　但从来没有　　　　\n　无故旷职过。　　　\n　加上最近听说她\n　好像有什么烦恼的样子……　　　　　　　　　　　\n　\n　总之……为了以防万一，\n　可以帮忙寻找主任吗？　　　　　\n　详情还请来圣乌尔斯拉医科大学\n　２楼的护理站，　　\n　找玛萨护士长。",
+  "pProcessContents": [],
+  "ProcessContents": [
+    {
+      "HasAddress": true,
+      "Content": "★据说四处都找不到\n　迟到是家常便饭亚苏拉主任。\n　有目击证言提到她　　　　\n　「好像很烦恼的样子」……　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★承接搜索委托。\n　在医院内打听看看　　　　　\n　有没有目击者吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★玛萨护士长说，　　　　\n　第一个发现主任失踪的人\n　是玛洛妮小姐。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★玛洛妮小姐说，　　　\n　主任要比她早起\n　是不可能的事……　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★夏鲁鲁先生说，\n　主任好像每天都被凯瑞教授骂。\n　这会是她失踪的原因吗？　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★尽管凯瑞教授很困扰，\n　但好像没有很担心。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★古恩小姐有听到　　　　　　\n　主任烦恼地说　　　\n　「在这间医院也无法解决」。\n　所以她不在医院里吗？　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★菲莉亚小姐说\n　主任出外去找资料书。　\n　这会是真的吗……？　　　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★希伦小姐似乎\n　不知道主任失踪的事。　　\n　知道了就觉得放心，　　　　　　　　\n　好像哪里不太对……　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★梅菲尔小姐说，　　　　　\n　主任会不会因为想睡懒觉\n　所以搞失踪。　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★赛西儿姐姐说，\n　主任这几天好像很忧郁。　　　\n　似乎是因为研究的进展不如预期。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★虽然榭拉小姐早上７点就在柜台，\n　但没有看到主任。\n　或许主任更早就经过了……　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★有人看到主任离开医院的事\n　应该不会错了。　　　　　\n　不知道警卫有没有看到？　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★警备员目击到\n　主任搭乘巴士离开！　　　　　　　　　　　\n　快前往克洛斯贝尔。　　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★在克洛斯贝尔各个地方打听看看　　\n　有没有人见到主任吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★主任下车后，　　\n　似乎前往了中央广场。　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★凯特前辈在清早时\n　看到一个穿白袍的人，\n　从中央大道前往行政区。　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★主任当时好像肚子饿了，\n　去港湾区的摊贩看看吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★确认到主任\n　有在港湾区的摊位吃东西。　　　　\n　寻找附近有没有目击者吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★主任好像被蓝衣不良少年　　　\n　带去码头的样子。\n　会是『圣约帮』的人吗……？　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★穿白袍的人似乎把　　\n　像药的东西交给蓝衣少年。\n　难不成在做什么交易……？　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★瓦奇说和主任交谈的人\n　是阿赛尔。去问他看看吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★蓝衣少年・阿赛尔　　\n　收下的只是普通的头痛药。\n　追上前往图书馆的主任吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★亚苏拉主任就在图书馆内！　　　\n　快找到她吧！　　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★顺利确认亚苏拉主任没事。\n　真是段漫长的旅程……　　　　　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "26"
+    },
+    {
+      "HasAddress": true,
+      "Content": "27"
+    },
+    {
+      "HasAddress": true,
+      "Content": "28"
+    },
+    {
+      "HasAddress": true,
+      "Content": "29"
+    },
+    {
+      "HasAddress": true,
+      "Content": "30"
+    },
+    {
+      "HasAddress": true,
+      "Content": "31"
+    },
+    {
+      "HasAddress": true,
+      "Content": "32"
+    }
+  ]
+}

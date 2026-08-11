@@ -1,0 +1,144 @@
+{
+  "Id": 54,
+  "Unk1": 21,
+  "Mira": 3000,
+  "Dp": 3,
+  "Unk2": 12,
+  "Unk3": 0,
+  "Unk4": 1536,
+  "Unk5": 1536,
+  "QuestName": "店员的待客指导",
+  "Client": "诺玛",
+  "ReqBoardContent": "　我们店里的女服务生　　　　　　　　\n　很有工作能力，　　　　\n　但可惜不怎么和善。\n　\n　她笑起来绝对超可爱，　　　\n　实在太可惜了。　　　　　　\n　\n　能不能想办法　　　　　　　　　　　　　\n　试着逗她笑呢？　　　\n　\n　还请来玛因兹的　　　　　　　　　　　　\n　《红砖亭》！　　　",
+  "pProcessContents": [],
+  "ProcessContents": [
+    {
+      "HasAddress": true,
+      "Content": "★《红砖亭》的诺玛先生\n　好像希望女服务生\n　露卡能够面露笑容接待客人。\n　觉得似乎无法这么容易……　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★因为诺玛先生的委托，　\n　要想办法让露卡露出笑容。　　　　\n　不过，她要怎样才会笑呢？"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★兰迪发起的　　　　　　　　　　　\n　「追求露卡作战」　　　\n　如预期地失败了。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★向《红砖亭》的常客　　　　　\n　问问关于露卡的事吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★《红砖亭》的常客\n　卡洛斯先生告诉我们\n　露卡喜欢猫的情报。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★露卡对于　　　　　　\n　美喵装备很感兴趣。\n　不过，　　　　\n　没有想要自己穿的意思。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★在缇欧让人动容的努力（？）下，\n　露卡露出了笑容！　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "08"
+    },
+    {
+      "HasAddress": true,
+      "Content": "09"
+    },
+    {
+      "HasAddress": true,
+      "Content": "10"
+    },
+    {
+      "HasAddress": true,
+      "Content": "11"
+    },
+    {
+      "HasAddress": true,
+      "Content": "12"
+    },
+    {
+      "HasAddress": true,
+      "Content": "13"
+    },
+    {
+      "HasAddress": true,
+      "Content": "14"
+    },
+    {
+      "HasAddress": true,
+      "Content": "15"
+    },
+    {
+      "HasAddress": true,
+      "Content": "16"
+    },
+    {
+      "HasAddress": true,
+      "Content": "17"
+    },
+    {
+      "HasAddress": true,
+      "Content": "18"
+    },
+    {
+      "HasAddress": true,
+      "Content": "19"
+    },
+    {
+      "HasAddress": true,
+      "Content": "20"
+    },
+    {
+      "HasAddress": true,
+      "Content": "21"
+    },
+    {
+      "HasAddress": true,
+      "Content": "22"
+    },
+    {
+      "HasAddress": true,
+      "Content": "23"
+    },
+    {
+      "HasAddress": true,
+      "Content": "24"
+    },
+    {
+      "HasAddress": true,
+      "Content": "25"
+    },
+    {
+      "HasAddress": true,
+      "Content": "26"
+    },
+    {
+      "HasAddress": true,
+      "Content": "27"
+    },
+    {
+      "HasAddress": true,
+      "Content": "28"
+    },
+    {
+      "HasAddress": true,
+      "Content": "29"
+    },
+    {
+      "HasAddress": true,
+      "Content": "30"
+    },
+    {
+      "HasAddress": true,
+      "Content": "31"
+    },
+    {
+      "HasAddress": true,
+      "Content": "32"
+    }
+  ]
+}

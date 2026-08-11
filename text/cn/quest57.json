@@ -1,0 +1,144 @@
+{
+  "Id": 57,
+  "Unk1": 21,
+  "Mira": 2000,
+  "Dp": 3,
+  "Unk2": 13,
+  "Unk3": 0,
+  "Unk4": 1536,
+  "Unk5": 1536,
+  "QuestName": "续·主日学校的特别讲师",
+  "Client": "玛布林修女",
+  "ReqBoardContent": "　感谢前些日子\n　担任主日学校的老师。　　\n　\n　孩子们非常喜欢上课的内容，　　\n　不知道是不是可以　　　　　\n　也担任其他班级的老师，　　　　\n　所以来联系询问。\n　\n　请找克洛斯贝尔大教堂的　　　　\n　玛布林修女。　　　　　　\n　我会等待各位联系。",
+  "pProcessContents": [],
+  "ProcessContents": [
+    {
+      "HasAddress": true,
+      "Content": "★万万没想到\n　会再接收到担任老师的请托，　　\n　但可说是让孩子们了解\n　警察工作的绝佳机会。　　　\n　想好好努力看看。　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★顺利完成授课！　　　　　　\n　应该也有让孩子们　　　\n　对警察工作深感兴趣。　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★总算完成授课。\n　虽然有些错误，\n　但勉强算是及格吧。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★授课内容问题很多。　\n　需要再好好用功。"
+    },
+    {
+      "HasAddress": true,
+      "Content": "★授课内容很有问题。\n　除了不够用功外，\n　还应该要慎选老师……　　　　　"
+    },
+    {
+      "HasAddress": true,
+      "Content": "06"
+    },
+    {
+      "HasAddress": true,
+      "Content": "07"
+    },
+    {
+      "HasAddress": true,
+      "Content": "08"
+    },
+    {
+      "HasAddress": true,
+      "Content": "09"
+    },
+    {
+      "HasAddress": true,
+      "Content": "10"
+    },
+    {
+      "HasAddress": true,
+      "Content": "11"
+    },
+    {
+      "HasAddress": true,
+      "Content": "12"
+    },
+    {
+      "HasAddress": true,
+      "Content": "13"
+    },
+    {
+      "HasAddress": true,
+      "Content": "14"
+    },
+    {
+      "HasAddress": true,
+      "Content": "15"
+    },
+    {
+      "HasAddress": true,
+      "Content": "16"
+    },
+    {
+      "HasAddress": true,
+      "Content": "17"
+    },
+    {
+      "HasAddress": true,
+      "Content": "18"
+    },
+    {
+      "HasAddress": true,
+      "Content": "19"
+    },
+    {
+      "HasAddress": true,
+      "Content": "20"
+    },
+    {
+      "HasAddress": true,
+      "Content": "21"
+    },
+    {
+      "HasAddress": true,
+      "Content": "22"
+    },
+    {
+      "HasAddress": true,
+      "Content": "23"
+    },
+    {
+      "HasAddress": true,
+      "Content": "24"
+    },
+    {
+      "HasAddress": true,
+      "Content": "25"
+    },
+    {
+      "HasAddress": true,
+      "Content": "26"
+    },
+    {
+      "HasAddress": true,
+      "Content": "27"
+    },
+    {
+      "HasAddress": true,
+      "Content": "28"
+    },
+    {
+      "HasAddress": true,
+      "Content": "29"
+    },
+    {
+      "HasAddress": true,
+      "Content": "30"
+    },
+    {
+      "HasAddress": true,
+      "Content": "31"
+    },
+    {
+      "HasAddress": true,
+      "Content": "32"
+    }
+  ]
+}
