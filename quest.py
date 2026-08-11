@@ -5,7 +5,7 @@ from collections import defaultdict
 zstr = k.iso(
 	lambda a: a.replace("\1", "\n"),
 	lambda b: b.replace("\n", "\1"),
-)@k.enc("cp932")@k.zbytes()
+)@k.scoped_enc()@k.zbytes()
 
 questStruct = k.while_(lambda x: x["n"] != 0xFF)@k.struct(
 	ref.n@k.u1,

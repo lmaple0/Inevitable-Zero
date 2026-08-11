@@ -12,31 +12,36 @@ import insn
 import dump
 from insn import Insn, Char
 import translate
+import cncodec
 
 class Context: # {{{1
-	def __init__(self, vitapath, pcpath, outpath, en: bool, portraits: Path|None = None):
+	def __init__(self, vitapath, pcpath, outpath, en: bool, portraits: Path|None = None, cn=False, vita_charmap=None):
 		self.en = en
+		self.cn = cn
 		self.portraits = portraits
+		self.vita_encoding = cncodec.VitaCnEncoding(vita_charmap) if cn else "cp932"
+		self.pc_encoding = "gbk" if cn else "cp932"
+		self.output_encoding = self.pc_encoding
 
 		self.vitapath = vitapath
 		self.vita_scripts = {}
 		with (vitapath/"text/t_quest._dt").open("rb") as f:
-			self.vita_quests = kouzou.read(quest.questStruct, f)
+			self.vita_quests = kouzou.read(quest.questStruct, f, {"_encoding": self.vita_encoding})
 
 		self.pcpath = pcpath
 		self.pc_scripts = {}
 		with (pcpath/("text_us" if self.en else "text")/"t_quest._dt").open("rb") as f:
-			self.pc_quests = kouzou.read(quest.questStruct, f)
+			self.pc_quests = kouzou.read(quest.questStruct, f, {"_encoding": self.pc_encoding})
 
 		self.outpath = outpath
 
 	def save(self):
 		with (self.outpath/("text_us" if self.en else "text")/"t_quest._dt").open("wb") as f:
-			kouzou.write(quest.questStruct, f, self.pc_quests)
+			kouzou.write(quest.questStruct, f, self.pc_quests, {"_encoding": self.output_encoding})
 
 		for name, script in self.pc_scripts.items():
 			with (self.outpath/("scena_us" if self.en else "scena")/name).with_suffix(".bin").open("wb") as f:
-				params = { "_insns": insn.insn_zero_22 }
+				params = { "_insns": insn.insn_zero_22, "_encoding": self.output_encoding }
 				kouzou.write(scena.scenaStruct, f, script, params)
 
 	def _load(self, name, params, *, vita, transform):
@@ -60,13 +65,13 @@ class Context: # {{{1
 
 	def _get_vita(self, name):
 		if name not in self.vita_scripts:
-			params = { "_insns": insn.insn_zero_vita }
+			params = { "_insns": insn.insn_zero_vita, "_encoding": self.vita_encoding }
 			self.vita_scripts[name] = self._load(name, params, vita=True, transform=None)
 		return self.vita_scripts[name]
 
 	def _get_pc(self, name):
 		if name not in self.pc_scripts:
-			params = { "_insns": insn.insn_zero_22 }
+			params = { "_insns": insn.insn_zero_22, "_encoding": self.pc_encoding }
 			self.pc_scripts[name] = self._load(name, params, vita=False, transform={ "translate": True })
 		return self.pc_scripts[name]
 
@@ -92,6 +97,15 @@ class Context: # {{{1
 			)
 
 	def copy_quest(self, n, translation):
+		if self.cn:
+			self.pc_quests[n] = {
+				**self.vita_quests[n],
+				"steps": [
+					vs if vs != ps else ps
+					for vs, ps in zip(self.vita_quests[n]["steps"], self.pc_quests[n]["steps"])
+				],
+			}
+			return
 		self.pc_quests[n] = {
 			**self.vita_quests[n],
 			"name": translation.translate(self.vita_quests[n]["name"]),
@@ -102,6 +116,21 @@ class Context: # {{{1
 				for vs, ps in zip(self.vita_quests[n]["steps"], self.pc_quests[n]["steps"])
 			],
 		}
+
+	def convert_cn(self, zcodec, quest_ids, quest_name_overrides=None):
+		quests = [self.pc_quests[n] for n in quest_ids]
+		strings = cncodec.collect_strings(self.pc_scripts, quests)
+		unresolved = cncodec.unresolved_strings(strings)
+		if unresolved:
+			raise ValueError("Unresolved Vita CN codes in merged output:\n" + "\n---\n".join(unresolved))
+		mapping = cncodec.opencc_tw2sp(strings, zcodec)
+		translator = cncodec.MappingTranslator(mapping)
+		for name, script in self.pc_scripts.items():
+			self.pc_scripts[name] = do_transform(script, {"translate": translator})
+		for n in quest_ids:
+			self.pc_quests[n] = cncodec.convert_plain_strings(self.pc_quests[n], mapping)
+		for n, name in (quest_name_overrides or {}).items():
+			self.pc_quests[n]["name"] = name
 
 def patch_furniture_minigames(ctx): # {{{1
 	# There are minigames on some room furniture in the Vita version, let's
@@ -464,15 +493,17 @@ def quest57(ctx): # {{{1 Guest Lecturer for Sunday School (Continued)
 		copy_clause(vita, pc, 11, "@IF", [Insn('FLAG', 1536), Insn('END')], "@IF", 0, 0) # Marble
 
 		names = [n.name for n in pc.npcs]
+		if ctx.cn:
+			names = "Eralda Genus Renton Hatina Marble Morgio Seeker Tamil Hamil Momo Pansy Couta Eugot Anri Takt Boy Girl Boy Girl Ken Nana Boy Girl Harold Sophia Colin Leyte Ryu Controls".split()
 
 	vita = ctx._get_vita("t4010_1")
 	vita = transform_npcs(vita, vita_npcs, own=False)
 	vita = transform_funcs(vita, vita_funcs, include=0, own=False)
-	ctx.pc_scripts["t4010_1"] = patch_t4010_1(names, vita)
+	ctx.pc_scripts["t4010_1"] = patch_t4010_1(names, vita, cn=ctx.cn)
 	ctx._do_translate("t4010_1", tr)
 
 patched_script = None
-def patch_t4010_1(npc_names, raw):
+def patch_t4010_1(npc_names, raw, cn=False):
 	global patched_script
 	if patched_script is not None:
 		return deepcopy(patched_script)
@@ -498,11 +529,52 @@ def patch_t4010_1(npc_names, raw):
 
 	import tempfile
 	import subprocess
-	with tempfile.NamedTemporaryFile(mode="w+t", prefix="t4010_1-", suffix=".py") as f:
+	with tempfile.NamedTemporaryFile(mode="w+t", encoding="utf-8", prefix="t4010_1-", suffix=".py") as f:
 		dump.dump(f, raw, "verbose", names)
 		f.flush()
-		subprocess.check_call(["patch", "-u", f.name, "text/t4010_1.patch"])
-		patched_script = undump(Path(f.name).read_text())
+		patch_exe = shutil.which("patch")
+		if patch_exe is None:
+			git_exe = shutil.which("git")
+			if git_exe is not None:
+				candidate = Path(git_exe).parents[1] / "usr/bin/patch.exe"
+				if candidate.is_file():
+					patch_exe = candidate
+		if patch_exe is None:
+			raise FileNotFoundError("patch executable not found")
+		patch_path = Path("text/t4010_1.patch")
+		if cn:
+			lines = patch_path.read_text(encoding="utf-8").splitlines(keepends=True)
+			kept = []
+			skip = False
+			for line in lines:
+				if line.startswith("@@"):
+					skip = line.startswith("@@ -914,") or line.startswith("@@ -2034,")
+				if not skip:
+					kept.append(line)
+			filtered = Path(f.name).with_suffix(".patch")
+			filtered.write_text("".join(kept), encoding="utf-8")
+			patch_path = filtered
+		subprocess.check_call([str(patch_exe), "-u", f.name, str(patch_path)])
+		patched_script = undump(Path(f.name).read_text(encoding="utf-8"))
+		if cn:
+			def replace_speaker(obj, fragment, old, new, limit=1):
+				count = 0
+				def walk(value):
+					nonlocal count
+					if isinstance(value, Insn):
+						if value.name == "TEXT_TALK" and count < limit and int(value.args[0]) == old and fragment in str(value.args[1]):
+							value.args[0] = Char(new)
+							count += 1
+						walk(value.args)
+					elif isinstance(value, (list, tuple)):
+						for item in value: walk(item)
+					elif isinstance(value, dict):
+						for item in value.values(): walk(item)
+				walk(obj)
+				if count != limit:
+					raise ValueError(f"speaker replacement failed for {fragment!r}: {count}/{limit}")
+			replace_speaker(patched_script["code"][2], "大概算是懂了吧", 29, 27)
+			replace_speaker(patched_script["code"][2], "這樣啊～羅伊德老師", 25, 28)
 
 	return patched_script
 
@@ -802,11 +874,18 @@ argp.add_argument("outpath", type=Path, help="Directory to place the patched fil
 argp.add_argument("--minigame", action="store_true", help="Patches in dialogue for certain furniture in the headquarters. The minigames are not implemented, so it is simply a fade to black.")
 argp.add_argument("--no-misc", dest="misc", action="store_false", help="Include only the quests, and not the miscellaneous minor patches")
 argp.add_argument("-d", "--dump", dest="dumpdir", type=Path, help="Directory to place scenario dumps in, for all scenarios affected by the patch. Will be emptied.")
-def __main__(vitapath, pcpath, portraitpath, outpath, minigame, misc, dumpdir):
+argp.add_argument("--cn", action="store_true", help="Build only the Chinese path from official CLE Traditional Chinese Vita data")
+argp.add_argument("--vita-charmap", type=Path, help="Expanded Vita Traditional Chinese character map")
+argp.add_argument("--zcodec", type=Path, help="zeroTool zCodec executable used for OpenCC Tw2Sp conversion")
+def __main__(vitapath, pcpath, portraitpath, outpath, minigame, misc, dumpdir, cn, vita_charmap, zcodec):
 	if not vitapath.is_dir():
 		raise ValueError("vitapath must be a directory")
 	if not pcpath.is_dir():
 		raise ValueError("pcpath must be a directory")
+	if cn and (vita_charmap is None or not vita_charmap.is_file()):
+		raise ValueError("--cn requires --vita-charmap")
+	if cn and (zcodec is None or not zcodec.is_file()):
+		raise ValueError("--cn requires --zcodec")
 
 	if outpath.exists():
 		shutil.rmtree(outpath)
@@ -817,8 +896,8 @@ def __main__(vitapath, pcpath, portraitpath, outpath, minigame, misc, dumpdir):
 	(outpath/"scena_us").mkdir()
 	(outpath/"text_us").mkdir()
 
-	for en in [True, False]:
-		ctx = Context(vitapath, pcpath, outpath, en, portraits=portraitpath)
+	for en in ([False] if cn else [True, False]):
+		ctx = Context(vitapath, pcpath, outpath, en, portraits=portraitpath, cn=cn, vita_charmap=vita_charmap)
 
 		if minigame:
 			print("furniture_minigames")
@@ -840,6 +919,14 @@ def __main__(vitapath, pcpath, portraitpath, outpath, minigame, misc, dumpdir):
 		if misc:
 			print("misc")
 			patch_misc(ctx)
+
+		if cn:
+			print("opencc tw2sp")
+			ctx.convert_cn(
+				zcodec,
+				[54, 55, 56, 57, 58],
+				quest_name_overrides={57: "续·主日学校的特别讲师"},
+			)
 
 		print("save")
 		ctx.save()

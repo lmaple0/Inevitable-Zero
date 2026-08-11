@@ -358,6 +358,31 @@ class enc(iso):
 	def __repr__(self):
 		return f"enc({self._encoding!r})"
 
+def decode_text(data, encoding):
+	if hasattr(encoding, "decode"):
+		return encoding.decode(data)
+	return data.decode(encoding)
+
+def encode_text(text, encoding):
+	if not isinstance(encoding, str) and hasattr(encoding, "encode"):
+		return encoding.encode(text)
+	if isinstance(encoding, str) and encoding.lower().replace("-", "") in {"gbk", "cp936", "gb2312"}:
+		text = text.translate(str.maketrans({"・": "丄", "♪": "丅", "⑪": "丆"}))
+	return text.encode(encoding)
+
+class scoped_enc(element):
+	"""Encode strings using the _encoding value supplied to read/write scope."""
+	def read(self, ctx, nil_ok=False, inner=None):
+		assert inner is not None
+		return decode_text(inner.read(ctx, nil_ok), ctx.scope.get("_encoding", "cp932"))
+
+	def write(self, ctx, v, inner=None):
+		assert inner is not None
+		return inner.write(ctx, encode_text(v, ctx.scope.get("_encoding", "cp932")))
+
+	def __repr__(self):
+		return "scoped_enc()"
+
 # {{{1 Composites
 
 class field_meta(type(element)):

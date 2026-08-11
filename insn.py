@@ -4,7 +4,7 @@ import decompile
 import scena
 
 POS = "POS"|k.tuple(k.i4, k.i4, k.i4)
-zstr = "zstr"|k.enc("cp932")@k.zbytes()
+zstr = "zstr"|k.scoped_enc()@k.zbytes()
 
 class Translate(str): pass
 ZSTR = "ZSTR"|k.iso(Translate, str)@zstr
@@ -63,13 +63,13 @@ class TEXT(k.element):
 			elif ch == 0x1F: buffer.extend(b"{item %d}" % k.u2.read(ctx))
 			elif ch <= 0x1F: raise ValueError("%02X" % ch)
 			else: buffer.append(ch)
-		return Text(buffer.decode("cp932"))
+		return Text(k.decode_text(bytes(buffer), ctx.scope.get("_encoding", "cp932")))
 
 	def write(self, ctx, v, inner=None):
 		assert inner is None
 		end = 0
 		for format in self.FORMAT_RE.finditer(v):
-			ctx.write(v[end:format.start()].encode("cp932"))
+			ctx.write(k.encode_text(v[end:format.start()], ctx.scope.get("_encoding", "cp932")))
 			tag = format.group(3) or format.group(1)
 			if 0: pass
 			elif tag == "\n": ctx.write(b"\x01")

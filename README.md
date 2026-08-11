@@ -1,85 +1,62 @@
-# Inevitable Zero
+# Inevitable Zero 简体中文兼容 Fork
 
-A mod for *Trails from Zero* that ports over the PS Vita-exclusive quests to the
-PC version. The translation is a work in progress.
+[English README](README_EN.md)
 
-<details><summary>Ultimate Bread Showdown!</summary>
-In chapter 2, first day, after returning from Armorica Village.
+本 Fork 在上游 [Kyuuhachi/Inevitable-Zero](https://github.com/Kyuuhachi/Inevitable-Zero) 的基础上，加入 NISA PC 版《零之轨迹》简体中文构建路径，用于兼容 zeroTool 汉化及其汉化版 More Portraits。
 
-The result is announced in chapter 3, second day.
+目前只上传源代码，**尚未发布任何 Release**。本仓库也不包含从游戏或汉化补丁提取的受版权保护数据。
 
-For this one I also rename «Luscious Orange» to «Zesty Orange», because
-I couldn't find any other way to get the translation to make sense.
-</details>
-<details><summary>Search for the Oversleeping Doctor</summary>
-Chapter 2, second day.
+## 覆盖任务
 
-After talking to Azel, he disappears until you leave and come back. I don't know
-if this is how it works in the Vita version or if it's a bug in this patch.
-</details>
-<details><summary>Search for a Certain Person</summary>
-Chapter 3, fifth day.
-</details>
-<details><summary>Clerk’s Customer Service Guidance</summary>
-Start of chapter 4.
-</details>
-<details><summary>Guest Lecturer for Sunday School (Continued)</summary>
-Start of chapter 4.
-</details>
+- 店员的待客指导（ID 54）
+- 寻找某人（ID 55）
+- 寻找贪睡医师（ID 56）
+- 续·主日学校的特别讲师（ID 57）
+- 终极面包对决！（ID 58）
 
-I have not found any way to change the detective rank milestones,
-so since this mod adds a total of 14 extra DP, those are somewhat easier to reach.
+## 中文构建的主要变化
 
-It also contains a small number of other patches:
+- 新增 `--cn`，只构建中文脚本路径，不生成英文脚本。
+- 可读取云豹 PSV Evolution 繁体中文 donor 的自定义双字节编码。
+- 通过 `--vita-charmap` 传入外部字符映射；donor 与映射数据不随仓库分发。
+- 通过 zeroTool `zCodec -tw2s` 在构建时调用 OpenCC，将繁体中文转换为简体中文。
+- PC 输入与输出使用 GBK，并保留 zeroTool 的特殊字符映射。
+- 以汉化版 More Portraits 的中文脚本作为合并基线。
 
-<details><summary>Some exclamations from Fran when she calls</summary>
-When asking the gang to find Colin, and after exploring the Moon Temple.
-</details>
-<details><summary>One small line during a discussion with Sergei, which solves a minor plot hole (spoilers!)</summary>
-When discussing the D∴G Cult, Sergei writes down how it is spelled.
-</details>
+## 构建示例
 
-## Installation
+```powershell
+python patch.py `
+  <vita-evo-data> `
+  <pc-cn-wrapper-data> `
+  <output> `
+  -p <more-portraits-cn-wrapper-data> `
+  --cn `
+  --vita-charmap <charmap_expanded.json> `
+  --zcodec <zCodec.exe> `
+  --no-misc
+```
 
-Download the `inevitable.zip` file from the latest [release](https://github.com/Kyuuhachi/Inevitable-Zero/releases)
-and extract `data/` directory into the game's directory (you can open it like a .zip file).
-This is normally at
-`C:\Program Files (x86)\Steam\steamapps\common\The Legend of Heroes Trails from Zero`,
-or it can be found by right-clicking the game in Steam and choosing Manage » Browse local files.
+生成目录中的 `scena`、`text` 应在最终兼容包中分别放入：
 
-### Inevitable Portraits
+```text
+data_cn/scena
+data_cn/text
+```
 
-ShinKiseki's [More Portraits in Zero](https://github.com/shinkiseki/MorePortraitsInZero) modifies some of the same files as Inevitable Zero, and is thus not directly compatible. Instead there is a separate version of the mod, which should be installed after after More Portraits. The base Inevitable Zero is not required.
+语言无关的任务资源仍放在 `data/` 下。中文兼容包使用松散文件覆盖，不使用 P3A 或 `order.txt`。
 
+## 当前状态
 
-## Compatibility
+- 39 个任务相关脚本已完成静态构建与字节往返校验。
+- `t_quest._dt` 已包含五个简体中文任务名。
+- 已建立测试候选包，但尚未完成游戏内全流程、分支、DP、奖励和贴图验证。
+- 在完成游戏验证前不会发布正式 Release。
 
-Inevitable Zero was built against Steam version 1.4.12. The differences between different versions are minor, so there will be no issues if using the mod on a different version.
-It also works on the Nintendo Switch version, though this of course requires jailbreaking.
+## 致谢与来源
 
-Inevitable Portraits was built against [More Portraits in Zero](https://github.com/shinkiseki/MorePortraitsInZero) version 1.5.0, which was also built against 1.4.12.
+- 原 MOD 与移植逻辑：[Kyuuhachi](https://github.com/Kyuuhachi/Inevitable-Zero)。
+- 中文工具与本体汉化：[zeroTool](https://github.com/J31why/zeroTool)。
+- 本 Fork 所参考的繁体中文汉化补丁由科洛蒂娅公主（KloseRInz）等人基于云豹娱乐（CLE）本地化并发行的 PSV Evolution 亚洲版本提取制作。感谢公主等人制作并保存这份汉化补丁。
 
-## FAQ
-
-**Can I install this mid-playthrough?** Yes. But I can't guarantee stability if
-you are in an area with added NPCs, so I would recommend saving on one of the
-highways.
-
-**Do these support English/Japanese?** Yes, both languages are fully supported.
-
-**Are they voiced?** No. They're not voiced in Evolution, so there are no voice
-clips for them.
-
-**Do you receive any DP?/Does this affect achievements?** Yes, it does make
-detective ranks easier to attain since there are more DP in total. I believe
-adjusting the rank thresholds would require modding the exe, which is beyond
-the scope of this mod.
-
-## Credits
-Nihon Falcom: for creating the game.
-
-[GeofrontTeam](https://github.com/GeofrontTeam) and NIS America: for bringing it to the west.
-
-[Ouroboros](https://github.com/Ouroboros): for creating [EDDecompiler](https://github.com/Ouroboros/EDDecompiler). While I do not use it directly, it was invaluable as documentation for creating my own.
-
-[ShinKiseki](https://github.com/shinkiseki): for collaboration regarding the compatibility patch, and some proofreading.
+上游原始说明、英文安装信息与完整 Credits 请参阅 [README_EN.md](README_EN.md)。

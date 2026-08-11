@@ -298,8 +298,8 @@ class labels(k.element):
 labels = labels()
 
 scenaStruct = k.struct(
-	_.name1@k.enc("cp932")@k.fbytes(10),
-	_.name2@k.enc("cp932")@k.fbytes(10),
+	_.name1@k.scoped_enc()@k.fbytes(10),
+	_.name2@k.scoped_enc()@k.fbytes(10),
 
 	_.location@k.u2,
 	_.bgm@k.u2,
