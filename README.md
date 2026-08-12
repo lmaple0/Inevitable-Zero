@@ -53,6 +53,19 @@ data_cn/text
 - 已建立测试候选包，但尚未完成游戏内全流程、分支、DP、奖励和贴图验证。
 - 在完成游戏验证前不会发布正式 Release。
 
+仓库中的 39 个完整中文合并稿可以在不重新读取 Vita donor 的情况下重建为
+PC GBK 场景，用于工具链回归：
+
+```powershell
+python build_cn_scenarios.py <output-scena-directory>
+```
+
+该构建器写出的 7 字节 sepith 行与 NISA Zero 原生文件一致，并非 MOD 私有布局。
+如使用 Kreuzen 检查这些输出，需显式指定 `--legacy-layout native`；不会自动回退到
+Themélios 布局。
+
+该入口只重建已经登记的场景脚本；任务表和语言无关资源仍由完整构建流程生成。
+
 五个任务的可读简体中文任务表、字符映射及 39 个完整合并脚本位于 [`text/cn`](text/cn)，并随 Fork 一同维护。
 
 ## 致谢与来源
