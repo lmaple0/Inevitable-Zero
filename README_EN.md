@@ -1,6 +1,6 @@
 # Inevitable Zero
 
-> Fork note: this fork adds a Simplified Chinese build path for the zeroTool localization and its More Portraits baseline. No Chinese binary release has been published yet. See the [Chinese README](README.md) for scope and build notes.
+> Fork note: this fork adds a Simplified Chinese build path for the zeroTool localization and its More Portraits baseline. A Chinese compatibility test build is available as the [v0.1.0-rc1 pre-release](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.1.0-rc1). It has passed static build and roundtrip checks but not complete in-game quest testing. See the [Chinese README](README.md) for scope and build notes.
 
 A mod for *Trails from Zero* that ports over the PS Vita-exclusive quests to the
 PC version. The translation is a work in progress.
