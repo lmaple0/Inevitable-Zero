@@ -939,6 +939,9 @@ data['code'][6] = [
 					Insn('EXPR_VAR', 0, Expr([Insn('CONST', 0), Insn('SET'), Insn('END')])),
 					Insn('RETURN'),
 				]),
+				(None, []),
+			]),
+			Insn('IF', [
 				(Expr([Insn('FLAG', Flag(0)), Insn('NOT'), Insn('END')]), [
 					Insn('TEXT_TALK', Char(339), Text(
 						'#1110F这里的味道好香啊！\n'

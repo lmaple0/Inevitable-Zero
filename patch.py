@@ -458,8 +458,22 @@ def quest56(ctx): # {{{1 Search for the Oversleeping Doctor
 	with ctx.get("c1410") as (vita, pc):
 		pc.includes = vita.includes
 		# Talk to Wazy
-		copy_clause(vita, pc, 6, "@IF:1", [Insn('FLAG', 1055), Insn('END')], "@IF", 0, 0)
-		copy_clause(vita, pc, 6, "@IF:1", [Insn('FLAG', 1040), Insn('END')], "@IF", 0, 0)
+		flag1055 = [Insn('FLAG', 1055), Insn('END')]
+		flag1040 = [Insn('FLAG', 1040), Insn('END')]
+		wazy = get_(pc, "code", 6, "@IF:1")
+		if any(condition == flag1055 for condition, _ in wazy.args[0]):
+			copy_clause(vita, pc, 6, "@IF:1", flag1055, "@IF", 0, 0)
+			copy_clause(vita, pc, 6, "@IF:1", flag1040, "@IF", 0, 0)
+		else:
+			# Zero 1.5.5 nests the late-game branches that were previously
+			# direct clauses of this IF. The quest insertion points are unchanged.
+			for flag, pcpath in (
+				(flag1055, (None, "@IF:1", flag1055, "@IF", 0)),
+				(flag1040, (None, "@IF:1", None, "@IF:0", flag1040, "@IF", 0)),
+			):
+				source = get_(vita, "code", 6, "@IF:1", flag, "@IF", 0)[0]
+				target = get_(pc, "code", 6, "@IF:1", *pcpath)
+				target[0:0] = [source]
 		# Talk to Azel
 		copy_clause(vita, pc, 34, "@IF", [Insn('FLAG', 1055), Insn('END')], "@IF", 0, 0)
 		copy_clause(vita, pc, 34, "@IF", [Insn('FLAG', 1040), Insn('END')], "@IF", 0, 0)

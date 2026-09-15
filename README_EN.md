@@ -1,6 +1,6 @@
 # Inevitable Zero
 
-> Fork note: this fork adds a Simplified Chinese build path for the zeroTool localization and its More Portraits baseline. A Chinese compatibility test build is available as the [v0.1.0-rc1 pre-release](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.1.0-rc1). It has passed static build and roundtrip checks but not complete in-game quest testing. See the [Chinese README](README.md) for scope and build notes.
+> Fork note: this fork adds a Simplified Chinese build path for the zeroTool localization and its More Portraits baseline. The latest Chinese compatibility test build is [v0.2.0-rc1](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.2.0-rc1), refreshed for NISA Steam 1.5.5 (build 24743052), zeroTool Zero localization 1.9, and More Portraits in Zero 1.6.0. It has passed static build and roundtrip checks but not complete in-game quest testing. See the [Chinese README](README.md) for scope and build notes.
 
 A mod for *Trails from Zero* that ports over the PS Vita-exclusive quests to the
 PC version. The translation is a work in progress.
@@ -56,10 +56,10 @@ ShinKiseki's [More Portraits in Zero](https://github.com/shinkiseki/MorePortrait
 
 ## Compatibility
 
-Inevitable Zero was built against Steam version 1.4.12. The differences between different versions are minor, so there will be no issues if using the mod on a different version.
+The upstream English/Japanese Inevitable Zero build was made against Steam version 1.4.12. The Simplified Chinese fork package linked above has instead been rebuilt from NISA Steam 1.5.5.
 It also works on the Nintendo Switch version, though this of course requires jailbreaking.
 
-Inevitable Portraits was built against [More Portraits in Zero](https://github.com/shinkiseki/MorePortraitsInZero) version 1.5.0, which was also built against 1.4.12.
+The upstream English/Japanese Inevitable Portraits build targeted [More Portraits in Zero](https://github.com/shinkiseki/MorePortraitsInZero) 1.5.0. The Simplified Chinese fork package targets More Portraits in Zero 1.6.0.
 
 ## FAQ
 

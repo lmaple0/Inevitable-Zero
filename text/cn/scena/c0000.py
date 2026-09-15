@@ -214,7 +214,7 @@ data = {
 		},
 		{
 			'name': Translate('弗里吉亚'),
-			'pos': (5849, 0, 1759),
+			'pos': (5850, 0, 1760),
 			'angle': 315,
 			'_1': b'\x85\x01\x00\x00\x14\x00\x00\x00',
 			'function': Function((0, 7)),
@@ -230,7 +230,7 @@ data = {
 		},
 		{
 			'name': Translate('玛夏'),
-			'pos': (4389, 0, -4900),
+			'pos': (4390, 0, -4900),
 			'angle': 90,
 			'_1': b'\x85\x01\x00\x00\x15\x00\x00\x00',
 			'function': Function((0, 10)),
@@ -246,7 +246,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (6039, 0, 2779),
+			'pos': (6040, 0, 2780),
 			'angle': 292,
 			'_1': b'\x85\x01\x00\x00\x03\x00\x00\x00',
 			'function': Function((0, 12)),
@@ -254,7 +254,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (4940, 0, 3049),
+			'pos': (4940, 0, 3050),
 			'angle': 111,
 			'_1': b'\x85\x01\x00\x00\x04\x00\x00\x00',
 			'function': Function((0, 13)),
@@ -270,7 +270,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (4750, 0, 3109),
+			'pos': (4750, 0, 3110),
 			'angle': 111,
 			'_1': b'\x85\x01\x00\x00\x06\x00\x00\x00',
 			'function': Function((0, 15)),
@@ -278,7 +278,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (5909, 0, 2680),
+			'pos': (5910, 0, 2680),
 			'angle': 291,
 			'_1': b'\x85\x01\x00\x00\x07\x00\x00\x00',
 			'function': Function((0, 16)),
@@ -286,7 +286,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (5239, 0, 2819),
+			'pos': (5240, 0, 2820),
 			'angle': 286,
 			'_1': b'\x85\x01\x00\x00\x08\x00\x00\x00',
 			'function': Function((0, 17)),
@@ -294,7 +294,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (6539, 0, 1690),
+			'pos': (6540, 0, 1690),
 			'angle': 81,
 			'_1': b'\x85\x01\x00\x00\t\x00\x00\x00',
 			'function': Function((0, 18)),
@@ -302,7 +302,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (6320, 0, 2339),
+			'pos': (6320, 0, 2340),
 			'angle': 177,
 			'_1': b'\x85\x01\x00\x00\n\x00\x00\x00',
 			'function': Function((0, 19)),
@@ -310,7 +310,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (5130, 0, 2099),
+			'pos': (5130, 0, 2100),
 			'angle': 290,
 			'_1': b'\x85\x01\x00\x00\x0b\x00\x00\x00',
 			'function': Function((0, 20)),
@@ -318,7 +318,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (4079, 0, 2480),
+			'pos': (4080, 0, 2480),
 			'angle': 110,
 			'_1': b'\x85\x01\x00\x00\x08\x00\x00\x00',
 			'function': Function((0, 21)),
@@ -326,7 +326,7 @@ data = {
 		},
 		{
 			'name': Translate('商务人士'),
-			'pos': (3369, 0, 1950),
+			'pos': (3370, 0, 1950),
 			'angle': 180,
 			'_1': b'\x85\x01\x00\x00\x0c\x00\x00\x00',
 			'function': Function((0, 22)),
@@ -334,7 +334,7 @@ data = {
 		},
 		{
 			'name': Translate('商务人士'),
-			'pos': (3480, 0, 529),
+			'pos': (3480, 0, 530),
 			'angle': 0,
 			'_1': b'\x85\x01\x00\x00\r\x00\x00\x00',
 			'function': Function((0, 23)),
@@ -342,7 +342,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (4369, 0, 2119),
+			'pos': (4370, 0, 2120),
 			'angle': 101,
 			'_1': b'\x85\x01\x00\x00\x10\x00\x00\x00',
 			'function': Function((0, 24)),
@@ -358,7 +358,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (4539, 0, 3069),
+			'pos': (4540, 0, 3070),
 			'angle': 45,
 			'_1': b'\x85\x01\x00\x00\x12\x00\x00\x00',
 			'function': Function((0, 26)),
@@ -366,7 +366,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (5880, 0, 2589),
+			'pos': (5880, 0, 2590),
 			'angle': 315,
 			'_1': b'\x85\x01\x00\x00\x13\x00\x00\x00',
 			'function': Function((0, 27)),
@@ -382,7 +382,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (5909, 0, 3420),
+			'pos': (5910, 0, 3420),
 			'angle': 292,
 			'_1': b'\x85\x01\x00\x00\x0f\x00\x00\x00',
 			'function': Function((0, 29)),
@@ -398,7 +398,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (5239, 0, 2789),
+			'pos': (5240, 0, 2790),
 			'angle': 180,
 			'_1': b'\x85\x01\x00\x00\x03\x00\x00\x00',
 			'function': Function((0, 31)),
@@ -406,7 +406,7 @@ data = {
 		},
 		{
 			'name': Translate('游客'),
-			'pos': (4579, 0, 1519),
+			'pos': (4580, 0, 1520),
 			'angle': 252,
 			'_1': b'\x85\x01\x00\x00\x04\x00\x00\x00',
 			'function': Function((0, 32)),
@@ -494,7 +494,7 @@ data = {
 		},
 		{
 			'name': Translate('库罗玛'),
-			'pos': (699, 0, 13149),
+			'pos': (700, 0, 13150),
 			'angle': 270,
 			'_1': b'\x85\x01\x00\x00\x16\x00\x00\x00',
 			'function': Function((0, 33)),

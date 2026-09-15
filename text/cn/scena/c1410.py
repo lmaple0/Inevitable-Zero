@@ -929,541 +929,555 @@ data['code'][6] = [
 				]),
 			]),
 		]),
-		(Expr([Insn('FLAG', Flag(1342)), Insn('END')]), [
+		(None, [
 			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(1409)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F总之，请各位慢慢享受吧。{wait}'
-						'{page}'
-						'如果有空，三个人\n'
-						'一起喝点奶昔如何？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('CALL', Function((0, 10))),
-				]),
-			]),
-			Insn('TEXT_END', Char(254)),
-			Insn('CHAR_SET_FRAME', Char(14), 2),
-			Insn('RETURN'),
-		]),
-		(Expr([Insn('FLAG', Flag(1362)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0406F#0406F别看我现在这样，其实在纪念\n'
-						'庆典期间，我也是很忙的哦。{wait}'
-						'{page}'
-						'#0400F#0400F呵呵，虽然很遗憾，但今天就\n'
-						'随便敷衍一下，放她们回去吧。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('CALL', Function((0, 11))),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(1282)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(1408)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F总之，你们今天也\n'
-						'好好放松一下吧。{wait}'
-						'{page}'
-						'阿巴斯的调酒技术\n'
-						'可是十分高超的哦。{wait}'
-						'{page}'
-						'呵呵，今天的酒单里\n'
-						'都是些上乘之品哦。\n'
-						'你们也来一杯如何？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0404F#0404F呵呵，昨天多谢你们了。{wait}'
-						'{page}'
-						'#0400F#0400F能跟那对很有名气的游击士二人组同场竞技，\n'
-						'而且比赛本身也非常有趣。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0005F#0005F瓦奇你……\n'
-						'难道没有疲惫不堪吗？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE', Char(14), 0, 2000, (38, 38, 250, 1)),
-					Insn('SLEEP', 1000),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0405F#0405F哎，疲惫？为什么？\n'
-						'难道你是指昨天的竞赛吗？{wait}'
-						'{page}'
-						'#0402F#0402F啊哈哈，那不是很平常的娱乐活动嘛。{wait}'
-						'{page}'
-						'平时和瓦鲁多打架，\n'
-						'每次也都会那么激烈的。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE', Char(0), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('EMOTE', Char(1), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('EMOTE', Char(2), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('EMOTE', Char(3), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('SLEEP', 1000),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0003F#0003F（真是不可小看不良少年的体力啊……）{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(260), Text(
-						'#0306F#0306F（呼～让我感觉自己已经上了年纪呢……）{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(1408)),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(1055)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 16))), Insn('NOT'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 64))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 22))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 20))), Insn('BOOL_AND'), Insn('END')]), [
-					Insn('CALL', Function((2, 21))),
-				]),
-				(Expr([Insn('EXEC', Insn('QUEST_GET', 18, Insn('FLAG_GET', 16))), Insn('END')]), [
+				(Expr([Insn('FLAG', Flag(1342)), Insn('END')]), [
 					Insn('IF', [
-						(Expr([Insn('FLAG', Flag(1151)), Insn('END')]), [
-							Insn('CALL', Function((0, 13))),
+						(Expr([Insn('FLAG', Flag(1409)), Insn('END')]), [
+							Insn('TEXT_TALK', Char(14), Text(
+								'#0400F#0400F总之，请各位慢慢享受吧。{wait}'
+								'{page}'
+								'如果有空，三个人\n'
+								'一起喝点奶昔如何？{wait}'
+							)),
+							Insn('TEXT_WAIT'),
 						]),
 						(None, [
-							Insn('CALL', Function((0, 12))),
+							Insn('CALL', Function((0, 10))),
 						]),
 					]),
+					Insn('TEXT_END', Char(254)),
+					Insn('CHAR_SET_FRAME', Char(14), 2),
+					Insn('RETURN'),
 				]),
-				(None, [
-					Insn('CALL', Function((0, 13))),
-				]),
+				(None, []),
 			]),
-		]),
-		(Expr([Insn('FLAG', Flag(1040)), Insn('END')]), [
 			Insn('IF', [
-				(Expr([Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 16))), Insn('NOT'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 64))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 22))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 20))), Insn('BOOL_AND'), Insn('END')]), [
-					Insn('CALL', Function((2, 21))),
-				]),
-				(Expr([Insn('EXEC', Insn('QUEST_GET', 18, Insn('FLAG_GET', 16))), Insn('END')]), [
-					Insn('IF', [
-						(Expr([Insn('FLAG', Flag(1151)), Insn('END')]), [
-							Insn('CALL', Function((0, 14))),
-						]),
-						(None, [
-							Insn('CALL', Function((0, 12))),
-						]),
-					]),
-				]),
-				(None, [
-					Insn('CALL', Function((0, 14))),
-				]),
-			]),
-			Insn('TEXT_END', Char(254)),
-			Insn('CHAR_SET_FRAME', Char(14), 2),
-			Insn('RETURN'),
-		]),
-		(Expr([Insn('FLAG', Flag(1031)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(1149)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F最近，克洛斯贝尔的黑道势力中\n'
-						'好像新加入了一个\n'
-						'名叫『黑月』的组织呢。{wait}'
-						'{page}'
-						'#0400F#0400F近来他们好像在走私管道方面和鲁巴彻\n'
-						'一直有些小摩擦。{wait}'
-						'{page}'
-						'#0406F#0406F哎呀哎呀……\n'
-						'只要不要把战火烧到\n'
-						'我们这边就好。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F最近，克洛斯贝尔的黑道势力中\n'
-						'好像新加入了一个\n'
-						'名叫『黑月』的组织呢。{wait}'
-						'{page}'
-						'似乎是来自东方国家呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0000F#0000F嗯，据说是控制着\n'
-						'卡尔瓦德东方人街\n'
-						'的巨大黑手党组织……{wait}'
-						'{page}'
-						'#0001F#0001F瓦奇，你了解什么内情吗？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE', Char(14), 0, 2000, (38, 38, 250, 1)),
-					Insn('SLEEP', 1000),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0405F#0405F……哎？\n'
-						'虽然还谈不上了解……{wait}'
-						'{page}'
-						'#0400F#0400F近来他们好像在走私管道方面和鲁巴彻\n'
-						'一直有些小摩擦。{wait}'
-						'{page}'
-						'虽然鲁巴彻好像暂时落了下风，\n'
-						'但也有传闻说，他们已经增强了战斗力。{wait}'
-						'{page}'
-						'#0406F#0406F战火也许会波及到我们这里，\n'
-						'所以要提高警惕。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0001F#0001F是吗……{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(260), Text(
-						'#0301F#0301F不过，你这些情报\n'
-						'是从哪里听来的呢？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0404F#0404F呵，探听情报虽然\n'
-						'不是我的专长。{wait}'
-						'{page}'
-						'#0402F#0402F但我的交际面\n'
-						'毕竟也算很广呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(1149)),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(1024)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(1148)), Insn('END')]), [
+				(Expr([Insn('FLAG', Flag(1362)), Insn('END')]), [
 					Insn('IF', [
 						(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
 							Insn('TEXT_TALK', Char(14), Text(
-								'#0400F#0400F呵呵，最近这段时间，\n'
-								'『特务支援课』这个名字\n'
-								'似乎也变得广为人知了呢。{wait}'
+								'#0406F#0406F别看我现在这样，其实在纪念\n'
+								'庆典期间，我也是很忙的哦。{wait}'
 								'{page}'
-								'#0404F#0404F哈，就保持这种势头，继续加油吧。\n'
-								'我也很期待你们的表现呢。{wait}'
+								'#0400F#0400F呵呵，虽然很遗憾，但今天就\n'
+								'随便敷衍一下，放她们回去吧。{wait}'
+							)),
+							Insn('TEXT_WAIT'),
+						]),
+						(None, [
+							Insn('CALL', Function((0, 11))),
+						]),
+					]),
+				]),
+				(Expr([Insn('FLAG', Flag(1282)), Insn('END')]), [
+					Insn('IF', [
+						(Expr([Insn('FLAG', Flag(1408)), Insn('END')]), [
+							Insn('TEXT_TALK', Char(14), Text(
+								'#0400F#0400F总之，你们今天也\n'
+								'好好放松一下吧。{wait}'
+								'{page}'
+								'阿巴斯的调酒技术\n'
+								'可是十分高超的哦。{wait}'
+								'{page}'
+								'呵呵，今天的酒单里\n'
+								'都是些上乘之品哦。\n'
+								'你们也来一杯如何？{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 						]),
 						(None, [
 							Insn('TEXT_TALK', Char(14), Text(
-								'#0400F#0400F呵呵，最近这段时间，\n'
-								'『特务支援课』这个名字\n'
-								'似乎也变得广为人知了呢。{wait}'
+								'#0404F#0404F呵呵，昨天多谢你们了。{wait}'
 								'{page}'
-								'#0409F#0409F不过，真要说的话，其实只是\n'
-								'被人当作嘲笑的对象而已呢。\n'
-								'啊哈哈哈哈……！{wait}'
+								'#0400F#0400F能跟那对很有名气的游击士二人组同场竞技，\n'
+								'而且比赛本身也非常有趣。{wait}'
+							)),
+							Insn('TEXT_WAIT'),
+							Insn('TEXT_TALK', Char(257), Text(
+								'#0005F#0005F瓦奇你……\n'
+								'难道没有疲惫不堪吗？{wait}'
+							)),
+							Insn('TEXT_WAIT'),
+							Insn('EMOTE', Char(14), 0, 2000, (38, 38, 250, 1)),
+							Insn('SLEEP', 1000),
+							Insn('TEXT_TALK', Char(14), Text(
+								'#0405F#0405F哎，疲惫？为什么？\n'
+								'难道你是指昨天的竞赛吗？{wait}'
+								'{page}'
+								'#0402F#0402F啊哈哈，那不是很平常的娱乐活动嘛。{wait}'
+								'{page}'
+								'平时和瓦鲁多打架，\n'
+								'每次也都会那么激烈的。{wait}'
+							)),
+							Insn('TEXT_WAIT'),
+							Insn('EMOTE', Char(0), 0, 2000, (16, 19, 250, 1)),
+							Insn('SOUND_PLAY', 23, 0, 0, 100),
+							Insn('EMOTE', Char(1), 0, 2000, (16, 19, 250, 1)),
+							Insn('SOUND_PLAY', 23, 0, 0, 100),
+							Insn('EMOTE', Char(2), 0, 2000, (16, 19, 250, 1)),
+							Insn('SOUND_PLAY', 23, 0, 0, 100),
+							Insn('EMOTE', Char(3), 0, 2000, (16, 19, 250, 1)),
+							Insn('SOUND_PLAY', 23, 0, 0, 100),
+							Insn('SLEEP', 1000),
+							Insn('TEXT_TALK', Char(257), Text(
+								'#0003F#0003F（真是不可小看不良少年的体力啊……）{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(260), Text(
-								'#0303F#0303F……都怪克洛斯贝尔时报周刊，\n'
-								'宣传方式太让人不爽了。{wait}'
+								'#0306F#0306F（呼～让我感觉自己已经上了年纪呢……）{wait}'
 							)),
 							Insn('TEXT_WAIT'),
-							Insn('TEXT_TALK', Char(258), Text(
-								'#0106F#0106F是啊……{wait}'
+							Insn('FLAG_SET', Flag(1408)),
+						]),
+					]),
+				]),
+				(Expr([Insn('FLAG', Flag(1055)), Insn('END')]), [
+					Insn('IF', [
+						(Expr([Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 16))), Insn('NOT'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 64))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 22))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 20))), Insn('BOOL_AND'), Insn('END')]), [
+							Insn('CALL', Function((2, 21))),
+						]),
+						(Expr([Insn('EXEC', Insn('QUEST_GET', 18, Insn('FLAG_GET', 16))), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(1151)), Insn('END')]), [
+									Insn('CALL', Function((0, 13))),
+								]),
+								(None, [
+									Insn('CALL', Function((0, 12))),
+								]),
+							]),
+						]),
+						(None, [
+							Insn('CALL', Function((0, 13))),
+						]),
+					]),
+				]),
+				(None, [
+					Insn('IF', [
+						(Expr([Insn('FLAG', Flag(1040)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 16))), Insn('NOT'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('FLAG_GET', 64))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 22))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 56, Insn('TASK_GET', 20))), Insn('BOOL_AND'), Insn('END')]), [
+									Insn('CALL', Function((2, 21))),
+								]),
+								(Expr([Insn('EXEC', Insn('QUEST_GET', 18, Insn('FLAG_GET', 16))), Insn('END')]), [
+									Insn('IF', [
+										(Expr([Insn('FLAG', Flag(1151)), Insn('END')]), [
+											Insn('CALL', Function((0, 14))),
+										]),
+										(None, [
+											Insn('CALL', Function((0, 12))),
+										]),
+									]),
+								]),
+								(None, [
+									Insn('CALL', Function((0, 14))),
+								]),
+							]),
+							Insn('TEXT_END', Char(254)),
+							Insn('CHAR_SET_FRAME', Char(14), 2),
+							Insn('RETURN'),
+						]),
+						(None, []),
+					]),
+					Insn('IF', [
+						(Expr([Insn('FLAG', Flag(1031)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(1149)), Insn('END')]), [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0400F#0400F最近，克洛斯贝尔的黑道势力中\n'
+										'好像新加入了一个\n'
+										'名叫『黑月』的组织呢。{wait}'
+										'{page}'
+										'#0400F#0400F近来他们好像在走私管道方面和鲁巴彻\n'
+										'一直有些小摩擦。{wait}'
+										'{page}'
+										'#0406F#0406F哎呀哎呀……\n'
+										'只要不要把战火烧到\n'
+										'我们这边就好。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+								]),
+								(None, [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0400F#0400F最近，克洛斯贝尔的黑道势力中\n'
+										'好像新加入了一个\n'
+										'名叫『黑月』的组织呢。{wait}'
+										'{page}'
+										'似乎是来自东方国家呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0000F#0000F嗯，据说是控制着\n'
+										'卡尔瓦德东方人街\n'
+										'的巨大黑手党组织……{wait}'
+										'{page}'
+										'#0001F#0001F瓦奇，你了解什么内情吗？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('EMOTE', Char(14), 0, 2000, (38, 38, 250, 1)),
+									Insn('SLEEP', 1000),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0405F#0405F……哎？\n'
+										'虽然还谈不上了解……{wait}'
+										'{page}'
+										'#0400F#0400F近来他们好像在走私管道方面和鲁巴彻\n'
+										'一直有些小摩擦。{wait}'
+										'{page}'
+										'虽然鲁巴彻好像暂时落了下风，\n'
+										'但也有传闻说，他们已经增强了战斗力。{wait}'
+										'{page}'
+										'#0406F#0406F战火也许会波及到我们这里，\n'
+										'所以要提高警惕。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0001F#0001F是吗……{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(260), Text(
+										'#0301F#0301F不过，你这些情报\n'
+										'是从哪里听来的呢？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0404F#0404F呵，探听情报虽然\n'
+										'不是我的专长。{wait}'
+										'{page}'
+										'#0402F#0402F但我的交际面\n'
+										'毕竟也算很广呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('FLAG_SET', Flag(1149)),
+								]),
+							]),
+						]),
+						(Expr([Insn('FLAG', Flag(1024)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(1148)), Insn('END')]), [
+									Insn('IF', [
+										(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
+											Insn('TEXT_TALK', Char(14), Text(
+												'#0400F#0400F呵呵，最近这段时间，\n'
+												'『特务支援课』这个名字\n'
+												'似乎也变得广为人知了呢。{wait}'
+												'{page}'
+												'#0404F#0404F哈，就保持这种势头，继续加油吧。\n'
+												'我也很期待你们的表现呢。{wait}'
+											)),
+											Insn('TEXT_WAIT'),
+										]),
+										(None, [
+											Insn('TEXT_TALK', Char(14), Text(
+												'#0400F#0400F呵呵，最近这段时间，\n'
+												'『特务支援课』这个名字\n'
+												'似乎也变得广为人知了呢。{wait}'
+												'{page}'
+												'#0409F#0409F不过，真要说的话，其实只是\n'
+												'被人当作嘲笑的对象而已呢。\n'
+												'啊哈哈哈哈……！{wait}'
+											)),
+											Insn('TEXT_WAIT'),
+											Insn('TEXT_TALK', Char(260), Text(
+												'#0303F#0303F……都怪克洛斯贝尔时报周刊，\n'
+												'宣传方式太让人不爽了。{wait}'
+											)),
+											Insn('TEXT_WAIT'),
+											Insn('TEXT_TALK', Char(258), Text(
+												'#0106F#0106F是啊……{wait}'
+											)),
+											Insn('TEXT_WAIT'),
+											Insn('FLAG_SET', Flag(0)),
+										]),
+									]),
+								]),
+								(None, [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0400F#0400F哎呀，这不是罗伊德和各位嘛。{wait}'
+										'{page}'
+										'最近一直都没见到你们，\n'
+										'又在调查些什么吗？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0000F#0000F不，今天只是在处理一些\n'
+										'琐碎的支援请求而已。{wait}'
+										'{page}'
+										'#0006F#0006F最近也经常跑去总部帮忙呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0404F#0404F呵呵，大概是因为临近纪念庆典，\n'
+										'到处都很热闹，所以警察局也很忙吧。{wait}'
+										'{page}'
+										'#0400F#0400F总之，就保持这种势头，继续加油吧。{wait}'
+										'{page}'
+										'最近这段时间，克洛斯贝尔时报周刊\n'
+										'对你们的评价好像也比以前\n'
+										'强了不少呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0003F#0003F嗯，是啊。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(260), Text(
+										'#0305F#0305F（话说～这种鼓励的话，为什么是\n'
+										'\u3000不良帮派的头目对我们说的啊……）{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('FLAG_SET', Flag(1148)),
+								]),
+							]),
+						]),
+						(Expr([Insn('FLAG', Flag(801)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0400F#0400F哎呀呀……今天差不多\n'
+										'也该关门了吧。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+								]),
+								(None, [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0406F#0406F哎呀呀……\n'
+										'我接下来还有\n'
+										'工作哦。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0000F#0000F工作……？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0402F#0402F呵呵，秘丄密丄哦。{wait}'
+										'{page}'
+										'如果想得到更多的情报，\n'
+										'可就必须要付情报费了。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('FLAG_SET', Flag(0)),
+								]),
+							]),
+						]),
+						(Expr([Insn('FLAG', Flag(777)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0403F#0403F白色鬃毛的神狼，守护着\n'
+										'钟声响起的宿命之地──\n'
+										'……大概是这么说的吧？{wait}'
+										'{page}'
+										'#0400F#0400F七耀教会的圣典中\n'
+										'好像有过这样的记载呢。{wait}'
+										'{page}'
+										'#0404F#0404F不过，以前从没当真过就是了。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+								]),
+								(None, [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0400F#0400F听说克洛斯贝尔的\n'
+										'警备队正在山中猎捕\n'
+										'狼型的魔兽？{wait}'
+										'{page}'
+										'#0404F#0404F哼……狼型吗……\n'
+										'稍微有些让人在意呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0001F#0001F与其说是在山中猎捕，\n'
+										'其实也只是警备巡逻而已吧……{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(260), Text(
+										'#0301F#0301F话说～这些奇怪的情报，\n'
+										'你到底是从哪里打探来的啊？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0404F#0404F呵呵……\n'
+										'看来确有其事呢。{wait}'
+										'{page}'
+										'#0400F#0400F……其实，我只是记得在教会的圣典中\n'
+										'有过那样的记载。{wait}'
+										'{page}'
+										'#0403F#0403F白色鬃毛的神狼，守护着\n'
+										'钟声响起的宿命之地──\n'
+										'……大概是这么说的吧？{wait}'
+										'{page}'
+										'#0400F#0400F不过，以前从没当真过就是了。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0005F#0005F是、是吗……{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(258), Text(
+										'#0100F#0100F村长先生的话……\n'
+										'还真是意外的\n'
+										'准确呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('FLAG_SET', Flag(0)),
+								]),
+							]),
+						]),
+						(Expr([Insn('FLAG', Flag(768)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0403F#0403F那天晚上，确实是承蒙\n'
+										'你们支援课关照了。{wait}'
+										'{page}'
+										'#0402F#0402F呵呵，以后要是有什么事，尽管来找我。\n'
+										'只要我有兴致，\n'
+										'说不定可以助你们一臂之力哦。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+								]),
+								(None, [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0405F#0405F哎呀，这不是罗伊德嘛。{wait}'
+										'{page}'
+										'#0402F#0402F真开心呢……\n'
+										'你是来找我的吗？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('EMOTE', Char(257), 0, 2000, (38, 38, 250, 1)),
+									Insn('SLEEP', 1000),
+									Insn('EMOTE', Char(257), 0, 2000, (40, 43, 100, 0)),
+									Insn('SLEEP', 500),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0013F#0013F哎！？那个……{wait}'
+										'{page}'
+										'#0013F#0013F没有什么特别的意思，\n'
+										'只是过来道个谢而已……{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('EMOTE_STOP', Char(257)),
+									Insn('TEXT_TALK', Char(259), Text(
+										'#0211F#0211F罗伊德前辈的反应很不自然，\n'
+										'明显心慌了呢。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0403F#0403F呵呵……不开玩笑了。{wait}'
+										'{page}'
+										'#0400F#0400F那天晚上，确实是承蒙\n'
+										'你们支援课关照了。{wait}'
+										'{page}'
+										'#0402F#0402F以后要是有什么事，尽管来找我。\n'
+										'只要我有兴致，\n'
+										'说不定可以助你们一臂之力哦。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0003F#0003F啊，那到时候就拜托了。\n'
+										'（总觉和他说话很累呢……）{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('FLAG_SET', Flag(0)),
+								]),
+							]),
+						]),
+						(Expr([Insn('FLAG', Flag(533)), Insn('END')]), [
+							Insn('IF', [
+								(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0404F#0404F我已经向成员们交代过了，\n'
+										'让他们不要再擅自\n'
+										'做出一些不妥的行动。{wait}'
+										'{page}'
+										'#0400F#0400F至少在今天一天，\n'
+										'应该不会再有什么麻烦了。{wait}'
+										'{page}'
+										'#0402F#0402F呵呵……要进行调查的话，\n'
+										'最好还是应该赶快行动吧？{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+								]),
+								(None, [
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0404F#0404F我已经向成员们交代过了，\n'
+										'让他们不要再擅自\n'
+										'做出一些不妥的行动。{wait}'
+										'{page}'
+										'#0400F#0400F至少在今天一天，\n'
+										'应该不会再有什么麻烦了。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(257), Text(
+										'#0001F#0001F是吗……那可真是多谢了。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0402F#0402F哈哈……真讨厌啊。\n'
+										'我又不是为了你们\n'
+										'才约束大家的。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('EMOTE', Char(0), 0, 2000, (0, 1, 250, 2)),
+									Insn('SOUND_PLAY', 29, 0, 0, 100),
+									Insn('EMOTE', Char(1), 0, 2000, (0, 1, 250, 2)),
+									Insn('SOUND_PLAY', 29, 0, 0, 100),
+									Insn('EMOTE', Char(2), 0, 2000, (0, 1, 250, 2)),
+									Insn('SOUND_PLAY', 29, 0, 0, 100),
+									Insn('EMOTE', Char(3), 0, 2000, (0, 1, 250, 2)),
+									Insn('SOUND_PLAY', 29, 0, 0, 100),
+									Insn('SLEEP', 1000),
+									Insn('TEXT_TALK', Char(14), Text(
+										'#0402F#0402F只是趁现在积蓄一下战斗力，\n'
+										'到时候才能去血洗\n'
+										'剑蛇帮而已啊。{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('EMOTE', Char(0), 0, 2000, (16, 19, 250, 1)),
+									Insn('SOUND_PLAY', 23, 0, 0, 100),
+									Insn('EMOTE', Char(1), 0, 2000, (16, 19, 250, 1)),
+									Insn('SOUND_PLAY', 23, 0, 0, 100),
+									Insn('EMOTE', Char(2), 0, 2000, (16, 19, 250, 1)),
+									Insn('SOUND_PLAY', 23, 0, 0, 100),
+									Insn('EMOTE', Char(3), 0, 2000, (16, 19, 250, 1)),
+									Insn('SOUND_PLAY', 23, 0, 0, 100),
+									Insn('SLEEP', 1000),
+									Insn('TEXT_TALK', Char(260), Text(
+										'#0306F#0306F（虽然外表很可爱，\n'
+										'\u3000但不良少年终究是不良少年呢……）{wait}'
+									)),
+									Insn('TEXT_WAIT'),
+									Insn('FLAG_SET', Flag(0)),
+								]),
+							]),
+						]),
+						(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
+							Insn('TEXT_TALK', Char(14), Text(
+								'#0400F#0400F呵呵……\n'
+								'一定要带些有趣的消息回来啊。{wait}'
+								'{page}'
+								'短时间之内，\n'
+								'我倒是可以在这里等等你们。{wait}'
+							)),
+							Insn('TEXT_WAIT'),
+						]),
+						(None, [
+							Insn('TEXT_TALK', Char(14), Text(
+								'#0400F#0400F你是叫罗伊德吧？\n'
+								'还真是个很有意思的人。{wait}'
+								'{page}'
+								'#0402F#0402F呵呵……以后也可以\n'
+								'随时来这里玩哦。\n'
+								'还有，一定要带些有趣的消息回来啊。{wait}'
+								'{page}'
+								'短时间之内，\n'
+								'我倒是可以在这里等等你们。{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('FLAG_SET', Flag(0)),
 						]),
 					]),
 				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F哎呀，这不是罗伊德和各位嘛。{wait}'
-						'{page}'
-						'最近一直都没见到你们，\n'
-						'又在调查些什么吗？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0000F#0000F不，今天只是在处理一些\n'
-						'琐碎的支援请求而已。{wait}'
-						'{page}'
-						'#0006F#0006F最近也经常跑去总部帮忙呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0404F#0404F呵呵，大概是因为临近纪念庆典，\n'
-						'到处都很热闹，所以警察局也很忙吧。{wait}'
-						'{page}'
-						'#0400F#0400F总之，就保持这种势头，继续加油吧。{wait}'
-						'{page}'
-						'最近这段时间，克洛斯贝尔时报周刊\n'
-						'对你们的评价好像也比以前\n'
-						'强了不少呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0003F#0003F嗯，是啊。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(260), Text(
-						'#0305F#0305F（话说～这种鼓励的话，为什么是\n'
-						'\u3000不良帮派的头目对我们说的啊……）{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(1148)),
-				]),
 			]),
-		]),
-		(Expr([Insn('FLAG', Flag(801)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F哎呀呀……今天差不多\n'
-						'也该关门了吧。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0406F#0406F哎呀呀……\n'
-						'我接下来还有\n'
-						'工作哦。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0000F#0000F工作……？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0402F#0402F呵呵，秘丄密丄哦。{wait}'
-						'{page}'
-						'如果想得到更多的情报，\n'
-						'可就必须要付情报费了。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(0)),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(777)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0403F#0403F白色鬃毛的神狼，守护着\n'
-						'钟声响起的宿命之地──\n'
-						'……大概是这么说的吧？{wait}'
-						'{page}'
-						'#0400F#0400F七耀教会的圣典中\n'
-						'好像有过这样的记载呢。{wait}'
-						'{page}'
-						'#0404F#0404F不过，以前从没当真过就是了。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0400F#0400F听说克洛斯贝尔的\n'
-						'警备队正在山中猎捕\n'
-						'狼型的魔兽？{wait}'
-						'{page}'
-						'#0404F#0404F哼……狼型吗……\n'
-						'稍微有些让人在意呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0001F#0001F与其说是在山中猎捕，\n'
-						'其实也只是警备巡逻而已吧……{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(260), Text(
-						'#0301F#0301F话说～这些奇怪的情报，\n'
-						'你到底是从哪里打探来的啊？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0404F#0404F呵呵……\n'
-						'看来确有其事呢。{wait}'
-						'{page}'
-						'#0400F#0400F……其实，我只是记得在教会的圣典中\n'
-						'有过那样的记载。{wait}'
-						'{page}'
-						'#0403F#0403F白色鬃毛的神狼，守护着\n'
-						'钟声响起的宿命之地──\n'
-						'……大概是这么说的吧？{wait}'
-						'{page}'
-						'#0400F#0400F不过，以前从没当真过就是了。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0005F#0005F是、是吗……{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(258), Text(
-						'#0100F#0100F村长先生的话……\n'
-						'还真是意外的\n'
-						'准确呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(0)),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(768)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0403F#0403F那天晚上，确实是承蒙\n'
-						'你们支援课关照了。{wait}'
-						'{page}'
-						'#0402F#0402F呵呵，以后要是有什么事，尽管来找我。\n'
-						'只要我有兴致，\n'
-						'说不定可以助你们一臂之力哦。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0405F#0405F哎呀，这不是罗伊德嘛。{wait}'
-						'{page}'
-						'#0402F#0402F真开心呢……\n'
-						'你是来找我的吗？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE', Char(257), 0, 2000, (38, 38, 250, 1)),
-					Insn('SLEEP', 1000),
-					Insn('EMOTE', Char(257), 0, 2000, (40, 43, 100, 0)),
-					Insn('SLEEP', 500),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0013F#0013F哎！？那个……{wait}'
-						'{page}'
-						'#0013F#0013F没有什么特别的意思，\n'
-						'只是过来道个谢而已……{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE_STOP', Char(257)),
-					Insn('TEXT_TALK', Char(259), Text(
-						'#0211F#0211F罗伊德前辈的反应很不自然，\n'
-						'明显心慌了呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0403F#0403F呵呵……不开玩笑了。{wait}'
-						'{page}'
-						'#0400F#0400F那天晚上，确实是承蒙\n'
-						'你们支援课关照了。{wait}'
-						'{page}'
-						'#0402F#0402F以后要是有什么事，尽管来找我。\n'
-						'只要我有兴致，\n'
-						'说不定可以助你们一臂之力哦。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0003F#0003F啊，那到时候就拜托了。\n'
-						'（总觉和他说话很累呢……）{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(0)),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(533)), Insn('END')]), [
-			Insn('IF', [
-				(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0404F#0404F我已经向成员们交代过了，\n'
-						'让他们不要再擅自\n'
-						'做出一些不妥的行动。{wait}'
-						'{page}'
-						'#0400F#0400F至少在今天一天，\n'
-						'应该不会再有什么麻烦了。{wait}'
-						'{page}'
-						'#0402F#0402F呵呵……要进行调查的话，\n'
-						'最好还是应该赶快行动吧？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-				]),
-				(None, [
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0404F#0404F我已经向成员们交代过了，\n'
-						'让他们不要再擅自\n'
-						'做出一些不妥的行动。{wait}'
-						'{page}'
-						'#0400F#0400F至少在今天一天，\n'
-						'应该不会再有什么麻烦了。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(257), Text(
-						'#0001F#0001F是吗……那可真是多谢了。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0402F#0402F哈哈……真讨厌啊。\n'
-						'我又不是为了你们\n'
-						'才约束大家的。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE', Char(0), 0, 2000, (0, 1, 250, 2)),
-					Insn('SOUND_PLAY', 29, 0, 0, 100),
-					Insn('EMOTE', Char(1), 0, 2000, (0, 1, 250, 2)),
-					Insn('SOUND_PLAY', 29, 0, 0, 100),
-					Insn('EMOTE', Char(2), 0, 2000, (0, 1, 250, 2)),
-					Insn('SOUND_PLAY', 29, 0, 0, 100),
-					Insn('EMOTE', Char(3), 0, 2000, (0, 1, 250, 2)),
-					Insn('SOUND_PLAY', 29, 0, 0, 100),
-					Insn('SLEEP', 1000),
-					Insn('TEXT_TALK', Char(14), Text(
-						'#0402F#0402F只是趁现在积蓄一下战斗力，\n'
-						'到时候才能去血洗\n'
-						'剑蛇帮而已啊。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('EMOTE', Char(0), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('EMOTE', Char(1), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('EMOTE', Char(2), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('EMOTE', Char(3), 0, 2000, (16, 19, 250, 1)),
-					Insn('SOUND_PLAY', 23, 0, 0, 100),
-					Insn('SLEEP', 1000),
-					Insn('TEXT_TALK', Char(260), Text(
-						'#0306F#0306F（虽然外表很可爱，\n'
-						'\u3000但不良少年终究是不良少年呢……）{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('FLAG_SET', Flag(0)),
-				]),
-			]),
-		]),
-		(Expr([Insn('FLAG', Flag(0)), Insn('END')]), [
-			Insn('TEXT_TALK', Char(14), Text(
-				'#0400F#0400F呵呵……\n'
-				'一定要带些有趣的消息回来啊。{wait}'
-				'{page}'
-				'短时间之内，\n'
-				'我倒是可以在这里等等你们。{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-		]),
-		(None, [
-			Insn('TEXT_TALK', Char(14), Text(
-				'#0400F#0400F你是叫罗伊德吧？\n'
-				'还真是个很有意思的人。{wait}'
-				'{page}'
-				'#0402F#0402F呵呵……以后也可以\n'
-				'随时来这里玩哦。\n'
-				'还有，一定要带些有趣的消息回来啊。{wait}'
-				'{page}'
-				'短时间之内，\n'
-				'我倒是可以在这里等等你们。{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('FLAG_SET', Flag(0)),
 		]),
 	]),
 	Insn('CHAR_SET_FRAME', Char(254), 0),

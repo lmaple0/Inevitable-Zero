@@ -1517,6 +1517,9 @@ data['code'][13] = [
 			Insn('TEXT_END', Char(254)),
 			Insn('RETURN'),
 		]),
+		(None, []),
+	]),
+	Insn('IF', [
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 2, Insn('TASK_GET', 0))), Insn('EXEC', Insn('QUEST_GET', 2, Insn('TASK_GET', 4))), Insn('NOT'), Insn('BOOL_AND'), Insn('EXEC', Insn('QUEST_GET', 2, Insn('FLAG_GET', 64))), Insn('NOT'), Insn('BOOL_AND'), Insn('END')]), [
 			Insn('TEXT_TALK', Char(254), Text(
 				'今天早晨，有一位客人\n'

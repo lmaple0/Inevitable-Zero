@@ -2160,17 +2160,13 @@ data['code'][10] = [
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(254), Text(
-				'从早上一直坚持到现在……\n'
+				'#15308F从早上一直坚持到现在……\n'
 				'差不多也该撤退了吧。{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('TEXT_TALK', Char(254), Text(
-				'……话说回来，黑月似乎是\n'
+				'{page}'
+				'#15301F……话说回来，黑月似乎是\n'
 				'相当难缠的对手啊。{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('TEXT_TALK', Char(254), Text(
-				'我是第一次跟他们交涉，\n'
+				'{page}'
+				'#15303F我是第一次跟他们交涉，\n'
 				'感觉就连底层的成员\n'
 				'也都很有组织纪律性。{wait}'
 			)),
@@ -2189,12 +2185,10 @@ data['code'][11] = [
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(254), Text(
-				'可恶，搜查一课的那些家伙，\n'
+				'#15410F可恶，搜查一课的那些家伙，\n'
 				'我早就看他们不顺眼了。{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('TEXT_TALK', Char(254), Text(
-				'平时总是理直气壮地\n'
+				'{page}'
+				'#15407F平时总是理直气壮地\n'
 				'强行接管我们处理的事件，\n'
 				'到这种时候却又把人呼来唤去……！{wait}'
 			)),
@@ -2211,11 +2205,9 @@ data['code'][12] = [
 	Insn('CHAR_WATCH', Char(15), Char(0), 0),
 	Insn('CHAR_WATCH', Char(16), Char(0), 0),
 	Insn('TEXT_TALK', Char(15), Text(
-		'啧，那就是黑月吗？{wait}'
-	)),
-	Insn('TEXT_WAIT'),
-	Insn('TEXT_TALK', Char(15), Text(
-		'说话都统一口径，\n'
+		'#15310F啧，那就是黑月吗？{wait}'
+		'{page}'
+		'#15310F说话都统一口径，\n'
 		'真是不讨人喜欢。{wait}'
 	)),
 	Insn('TEXT_WAIT'),
@@ -2230,17 +2222,13 @@ data['code'][12] = [
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_TALK', Char(16), Text(
-		'是受搜查一课的请求才来的～\n'
+		'#15401F是受搜查一课的请求才来的～\n'
 		'他们要我们去找住院的成员们做笔录。{wait}'
-	)),
-	Insn('TEXT_WAIT'),
-	Insn('TEXT_TALK', Char(16), Text(
-		'但那些人的口风实在太紧，\n'
+		'{page}'
+		'#15406F但那些人的口风实在太紧，\n'
 		'根本不可能露出破绽的～{wait}'
-	)),
-	Insn('TEXT_WAIT'),
-	Insn('TEXT_TALK', Char(16), Text(
-		'可恶，搜查一课的混蛋们。\n'
+		'{page}'
+		'#15407F可恶，搜查一课的混蛋们。\n'
 		'肯定是明知如此，才把工作推给我们的～！{wait}'
 	)),
 	Insn('TEXT_WAIT'),

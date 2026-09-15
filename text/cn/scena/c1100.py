@@ -2438,12 +2438,10 @@ data['code'][15] = [
 	Insn('IF', [
 		(Expr([Insn('FLAG', Flag(1055)), Insn('END')]), [
 			Insn('TEXT_TALK', Char(254), Text(
-				'今天要处理暴力事件和肇事逃逸犯，\n'
+				'#15301F今天要处理暴力事件和肇事逃逸犯，\n'
 				'然后就是交易诈骗那边的调查了。{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('TEXT_TALK', Char(254), Text(
-				'要是不赶快搞定，\n'
+				'{page}'
+				'#15306F要是不赶快搞定，\n'
 				'太阳都该下山了。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -2456,15 +2454,12 @@ data['code'][15] = [
 			Insn('IF', [
 				(Expr([Insn('FLAG', Flag(6)), Insn('NOT'), Insn('END')]), [
 					Insn('TEXT_TALK', Char(254), Text(
-						'……（啪啪）…………\n'
+						'#15303F……（啪啪）…………\n'
 						'你们的案子好像被一课给强行接管了呢。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'……算了，这也没办法啊。{wait}'
-					)),
-					Insn('TEXT_TALK', Char(254), Text(
-						'能在一课的管理范围内\n'
+						'{page}'
+						'#15300F……算了，这也没办法啊。{wait}'
+						'{page}'
+						'#15302F能在一课的管理范围内\n'
 						'掺上一脚，就已经\n'
 						'很不错了，不是吗？{wait}'
 					)),
@@ -2475,16 +2470,12 @@ data['code'][15] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'嗯，该说真不愧是\n'
+						'#15303F嗯，该说真不愧是\n'
 						'赛尔盖的部下吗……{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'算了，总之，尽量不要被人盯上啊。{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'如果你们的行为太过惹眼，\n'
+						'{page}'
+						'#15302F算了，总之，尽量不要被人盯上啊。{wait}'
+						'{page}'
+						'#15304F如果你们的行为太过惹眼，\n'
 						'可就要做好心理准备，随时遭受\n'
 						'副局长那类人的刁难了。{wait}'
 					)),
@@ -2510,12 +2501,10 @@ data['code'][15] = [
 				]),
 				(Expr([Insn('FLAG', Flag(7)), Insn('NOT'), Insn('END')]), [
 					Insn('TEXT_TALK', Char(254), Text(
-						'竟然能在一课的地盘中\n'
+						'#15300F竟然能在一课的地盘中\n'
 						'掺上一脚……{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'赛尔盖的部下吗……\n'
+						'{page}'
+						'#15303F赛尔盖的部下吗……\n'
 						'呵呵，说不定你们也算是\n'
 						'继承了那家伙的某些特点呢。{wait}'
 					)),
@@ -2525,7 +2514,7 @@ data['code'][15] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'算了，总之，一定注意不要\n'
+						'#15302F算了，总之，一定注意不要\n'
 						'显眼到被副局长盯上了。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -2533,13 +2522,11 @@ data['code'][15] = [
 				]),
 				(None, [
 					Insn('TEXT_TALK', Char(254), Text(
-						'……（啪啪）…………\n'
+						'#15303F……（啪啪）…………\n'
 						'话说回来，雷蒙德那家伙\n'
 						'怎么磨磨蹭蹭的？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'再这么磨蹭下去，去询问案情之前，\n'
+						'{page}'
+						'#15310F再这么磨蹭下去，去询问案情之前，\n'
 						'我都已经要把香烟抽完了。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -2557,24 +2544,20 @@ data['code'][16] = [
 	Insn('IF', [
 		(Expr([Insn('FLAG', Flag(8)), Insn('NOT'), Insn('END')]), [
 			Insn('TEXT_TALK', Char(254), Text(
-				'真想在纪念庆典的时候\n'
+				'#15400F真想在纪念庆典的时候\n'
 				'和恋人一起出去玩啊～{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('TEXT_TALK', Char(254), Text(
-				'比如说，到米修拉姆\n'
+				'{page}'
+				'#15404F比如说，到米修拉姆\n'
 				'度过一个愉快的假期～{wait}'
-			)),
-			Insn('TEXT_WAIT'),
-			Insn('TEXT_TALK', Char(254), Text(
-				'……算了，根本就不可能的。{wait}'
+				'{page}'
+				'#15408F……算了，根本就不可能的。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('FLAG_SET', Flag(8)),
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(254), Text(
-				'呵呵……\n'
+				'#15406F呵呵……\n'
 				'我们搜查官，在纪念庆典时期\n'
 				'是不可能放假的～{wait}'
 			)),

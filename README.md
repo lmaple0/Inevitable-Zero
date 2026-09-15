@@ -4,7 +4,7 @@
 
 本 Fork 在上游 [Kyuuhachi/Inevitable-Zero](https://github.com/Kyuuhachi/Inevitable-Zero) 的基础上，加入 NISA PC 版《零之轨迹》简体中文构建路径，用于兼容 zeroTool 汉化及其汉化版 More Portraits。
 
-首个中文兼容测试版已作为 [v0.1.0-rc1 Pre-release](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.1.0-rc1) 发布。仓库公开内容限于本 MOD 涉及的任务记录、完整合并脚本和构建所需映射，不是整个游戏的数据镜像。
+最新中文兼容测试版为 [v0.2.0-rc1 Pre-release](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.2.0-rc1)，基于 NISA Steam 1.5.5（build 24743052）、zeroTool 零轨汉化 1.9 与 More Portraits in Zero 1.6.0 刷新。仓库公开内容限于本 MOD 涉及的任务记录、完整合并脚本和构建所需映射，不是整个游戏的数据镜像。
 
 ## 覆盖任务
 
@@ -22,6 +22,7 @@
 - 通过 zeroTool `zCodec -tw2s` 在构建时调用 OpenCC，将繁体中文转换为简体中文。
 - PC 输入与输出使用 GBK，并保留 zeroTool 的特殊字符映射。
 - 以汉化版 More Portraits 的中文脚本作为合并基线。
+- 适配 NISA 1.5.5 中 `c1410` 的新版嵌套控制流，同时兼容旧版直接分支布局。
 
 ## 构建示例
 
@@ -48,7 +49,8 @@ data_cn/text
 
 ## 当前状态
 
-- 39 个任务相关脚本已完成静态构建与字节往返校验；新版 Kreuzen 验证结果为 36 个字节一致、3 个已知布局归一化差异、0 个失败。
+- 39 个任务相关脚本已从当前本机汉化与 More Portraits 1.6.0 基线重新合并并完成静态构建。
+- Kreuzen 往返验证结果为 39/39 可解析，其中 36 个字节一致，`r0000.bin`、`r1000.bin`、`r1500.bin` 为 3 个已知布局归一化差异，0 个失败。
 - `t_quest._dt` 已包含五个简体中文任务名。
 - 已建立测试候选包，但尚未完成游戏内全流程、分支、DP、奖励和贴图验证。
 - 当前仅发布 Pre-release；完成游戏内验证前不会发布稳定版 Release。

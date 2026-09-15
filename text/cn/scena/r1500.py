@@ -73,9 +73,9 @@ data = {
 		'chr/ch30300',
 		'chr/ch26800',
 		'chr/ch22100',
-		None,
-		None,
-		None,
+		'chr/ch00000',
+		'chr/ch00000',
+		'chr/ch00000',
 		'monster/ch62150',
 		'monster/ch62151',
 		'monster/ch66650',
@@ -3387,11 +3387,9 @@ data['code'][32] = [
 data['code'][33] = [
 	Insn('TEXT_START', Char(254)),
 	Insn('TEXT_TALK', Char(254), Text(
-		'我们打算在车站和机场盯梢。{wait}'
-	)),
-	Insn('TEXT_WAIT'),
-	Insn('TEXT_TALK', Char(254), Text(
-		'唐古拉姆门那边就拜托你们了。{wait}'
+		'#15301F我们打算在车站和机场盯梢。{wait}'
+		'{page}'
+		'#15301F唐古拉姆门那边就拜托你们了。{wait}'
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_END', Char(254)),
@@ -3408,12 +3406,10 @@ data['code'][34] = [
 					Insn('IF', [
 						(Expr([Insn('FLAG', Flag(1738)), Insn('NOT'), Insn('END')]), [
 							Insn('TEXT_TALK', Char(254), Text(
-								'呃啊……\n'
+								'#15412F呃啊……\n'
 								'一课的达德利搜查官！？{wait}'
-							)),
-							Insn('TEXT_WAIT'),
-							Insn('TEXT_TALK', Char(254), Text(
-								'……嘿嘿，早安～{wait}'
+								'{page}'
+								'#15402F……嘿嘿，早安～{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(266), Text(
@@ -3424,7 +3420,7 @@ data['code'][34] = [
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(254), Text(
-								'啊，没问题啦。\n'
+								'#15411F啊，没问题啦。\n'
 								'非常顺利～{wait}'
 							)),
 							Insn('TEXT_WAIT'),
@@ -3438,11 +3434,9 @@ data['code'][34] = [
 						]),
 						(None, [
 							Insn('TEXT_TALK', Char(254), Text(
-								'嘿嘿，要努力探听才行呢。{wait}'
-							)),
-							Insn('TEXT_WAIT'),
-							Insn('TEXT_TALK', Char(254), Text(
-								'工作，工作……{wait}'
+								'#15400F嘿嘿，要努力探听才行呢。{wait}'
+								'{page}'
+								'#15404F工作，工作……{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 						]),
@@ -3451,11 +3445,9 @@ data['code'][34] = [
 				]),
 				(Expr([Insn('FLAG', Flag(4)), Insn('NOT'), Insn('END')]), [
 					Insn('TEXT_TALK', Char(254), Text(
-						'咦～这不是支援课的各位吗？{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'莫非是来帮忙的吗？\n'
+						'#15402F咦～这不是支援课的各位吗？{wait}'
+						'{page}'
+						'#15400F莫非是来帮忙的吗？\n'
 						'喏，就是机场那件事。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -3475,11 +3467,9 @@ data['code'][34] = [
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(254), Text(
-								'啊～你们还没听说吗～{wait}'
-							)),
-							Insn('TEXT_WAIT'),
-							Insn('TEXT_TALK', Char(254), Text(
-								'算啦，也许还是不知道为好。\n'
+								'#15405F啊～你们还没听说吗～{wait}'
+								'{page}'
+								'#15400F算啦，也许还是不知道为好。\n'
 								'不然会被一课随意使唤到死呢～{wait}'
 							)),
 							Insn('TEXT_WAIT'),
@@ -3505,12 +3495,10 @@ data['code'][34] = [
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(254), Text(
-								'嗯～虽然不好大声宣扬，\n'
+								'#15401F嗯～虽然不好大声宣扬，\n'
 								'总之，可以说是『尚在搜索』吧～{wait}'
-							)),
-							Insn('TEXT_WAIT'),
-							Insn('TEXT_TALK', Char(254), Text(
-								'二课也被编入了搜索小组，\n'
+								'{page}'
+								'#15406F二课也被编入了搜索小组，\n'
 								'我和警部今天\n'
 								'都被使唤得很惨呢～{wait}'
 							)),
@@ -3521,7 +3509,7 @@ data['code'][34] = [
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(254), Text(
-								'说得没错。\n'
+								'#15406F说得没错。\n'
 								'真是麻烦的事件啊～{wait}'
 							)),
 							Insn('TEXT_WAIT'),
@@ -3531,11 +3519,9 @@ data['code'][34] = [
 				]),
 				(None, [
 					Insn('TEXT_TALK', Char(254), Text(
-						'今天要努力探听情报呢～{wait}'
-					)),
-					Insn('TEXT_WAIT'),
-					Insn('TEXT_TALK', Char(254), Text(
-						'要在对市民隐瞒实情的同时\n'
+						'#15401F今天要努力探听情报呢～{wait}'
+						'{page}'
+						'#15403F要在对市民隐瞒实情的同时\n'
 						'进行调查工作，还真是麻烦啊～{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -3544,7 +3530,7 @@ data['code'][34] = [
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(254), Text(
-				'本来就人手不足了……\n'
+				'#15406F本来就人手不足了……\n'
 				'唉，也只好尽力而为了。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
