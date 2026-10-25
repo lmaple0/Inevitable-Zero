@@ -273,7 +273,7 @@ data['code'][5] = [
 					Insn('CHAR_WATCH', Char(8), Char(257), 500),
 					Insn('SLEEP', 500),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#1P哦，罗伊德。\n'
+						'#14700F#1P哦，罗伊德。\n'
 						'你接下搜集材料的委托了吗？{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -292,13 +292,13 @@ data['code'][5] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#1P听你这样讲，我就放心了。\n'
+						'#14702F#1P听你这样讲，我就放心了。\n'
 						'我正好也想出了\n'
 						'新面包的点子。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#1P其中也有比较难获得的材料，\n'
+						'#14700F#1P其中也有比较难获得的材料，\n'
 						'我正觉得困扰呢。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -306,14 +306,14 @@ data['code'][5] = [
 					Insn('CAM_ROTATE', 45, 22, 0, 3000),
 					Insn('0x6E', 180, 3000),
 					Insn('TEXT_TALK', Char(10), Text(
-						'#3P这一天总算来临了……{wait}'
+						'#14803F#3P这一天总算来临了……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('0x6F', b'y'),
 					Insn('CHAR_WATCH', Char(10), Char(8), 500),
 					Insn('SLEEP', 500),
 					Insn('TEXT_TALK', Char(10), Text(
-						'#3P奥斯卡，究竟谁才是\n'
+						'#14807F#3P奥斯卡，究竟谁才是\n'
 						'更厉害的面包师傅，\n'
 						'我们就来一决胜负吧……！{wait}'
 					)),
@@ -323,7 +323,7 @@ data['code'][5] = [
 					Insn('CHAR_WATCH', Char(8), Char(10), 500),
 					Insn('SLEEP', 500),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#2P哦。你很起劲呢，贝奈特。\n'
+						'#14709F#2P哦。你很起劲呢，贝奈特。\n'
 						'彼此都加油吧！{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -407,13 +407,13 @@ data['code'][5] = [
 					Insn('FORK_AWAIT', Char(10), 1),
 					Insn('SLEEP', 500),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#1P嗯，说的也是。\n'
+						'#14704F#1P嗯，说的也是。\n'
 						'我希望你们搜集的是……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('CALL', Function((1, 15))),
 					Insn('TEXT_TALK', Char(10), Text(
-						'#3P我希望你们搜集的是……{wait}'
+						'#14804F#3P我希望你们搜集的是……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('CALL', Function((1, 16))),
@@ -447,7 +447,7 @@ data['code'][5] = [
 					Insn('CHAR_WATCH', Char(8), Char(257), 500),
 					Insn('SLEEP', 500),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#1P虽然是工作，不过还是很抱歉\n'
+						'#14706F#1P虽然是工作，不过还是很抱歉\n'
 						'拜托你这种麻烦事，罗伊德。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -460,7 +460,7 @@ data['code'][5] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'#1P听你这么说，我就放心了。\n'
+						'#14709F#1P听你这么说，我就放心了。\n'
 						'那就拜托你了，罗伊德！{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -1392,7 +1392,7 @@ data['code'][9] = [
 	Insn('0x6F', b'\x10'),
 	Insn('FORK_AWAIT', Char(257), 3),
 	Insn('TEXT_TALK', Char(8), Text(
-		'哦，罗伊德，\n'
+		'#14700F哦，罗伊德，\n'
 		'你来得正好。{wait}'
 	)),
 	Insn('TEXT_WAIT'),
@@ -1509,11 +1509,11 @@ data['code'][9] = [
 			Insn('CHAR_ROTATE', Char(10), 270, 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P真不甘心……！{wait}'
+				'#14806F#3P真不甘心……！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P我倒是还好。\n'
+				'#14704F#2P我倒是还好。\n'
 				'我已经尽力了，\n'
 				'所以不会遗憾。{wait}'
 			)),
@@ -1521,7 +1521,7 @@ data['code'][9] = [
 			Insn('CHAR_WATCH', Char(8), Char(10), 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P再说，贝奈特的面包\n'
+				'#14702F#2P再说，贝奈特的面包\n'
 				'也很好吃。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -1532,7 +1532,7 @@ data['code'][9] = [
 			Insn('EMOTE', Char(10), 0, 2000, (40, 43, 100, 0)),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P什，什么啦……\n'
+				'#14815F#3P什，什么啦……\n'
 				'居然称赞对手，\n'
 				'你有毛病吗？{wait}'
 			)),
@@ -1548,7 +1548,7 @@ data['code'][9] = [
 			Insn('TEXT_WAIT'),
 			Insn('BGM_PLAY', b'i\x00\x00'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P哈哈。\n'
+				'#14702F#2P哈哈。\n'
 				'这都是托罗伊德你们的福。\n'
 				'谢谢你。{wait}'
 			)),
@@ -1556,7 +1556,7 @@ data['code'][9] = [
 			Insn('IF', [
 				(Expr([Insn('FLAG', Flag(1104)), Insn('END')]), [
 					Insn('TEXT_TALK', Char(8), Text(
-						'#2P特别是慰问品\n'
+						'#14704F#2P特别是慰问品\n'
 						'『{item 322}』很有用。\n'
 						'我是因为那个材料才想出点子的。{wait}'
 					)),
@@ -1567,7 +1567,7 @@ data['code'][9] = [
 			Insn('CHAR_ROTATE', Char(10), 270, 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P真、真不甘心……！\n'
+				'#14811F#3P真、真不甘心……！\n'
 				'本来想说这次\n'
 				'一定要赢过你的说！{wait}'
 			)),
@@ -1577,12 +1577,12 @@ data['code'][9] = [
 			Insn('CHAR_WATCH', Char(8), Char(10), 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P什么嘛，不管是谁获胜\n'
+				'#14705F#2P什么嘛，不管是谁获胜\n'
 				'都没关系吧？{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P贝奈特的面包也很好吃。\n'
+				'#14702F#2P贝奈特的面包也很好吃。\n'
 				'创作出两种新面包，\n'
 				'这样客人也会增加吧。{wait}'
 			)),
@@ -1590,12 +1590,12 @@ data['code'][9] = [
 			Insn('CHAR_WATCH', Char(10), Char(8), 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P什、什么嘛……\n'
+				'#14813F#3P什、什么嘛……\n'
 				'你这样是在安慰我吗？{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P嗯？我不是那个意思。\n'
+				'#14702F#2P嗯？我不是那个意思。\n'
 				'贝奈特创作的新面包，\n'
 				'我觉得做得很好。{wait}'
 			)),
@@ -1613,7 +1613,7 @@ data['code'][9] = [
 			Insn('SLEEP', 500),
 			Insn('BGM_PLAY', b'\x98\x01\x00'),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P咦……是、是真的吗！？\n'
+				'#14809F#3P咦……是、是真的吗！？\n'
 				'……太好了！太好了──！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -1621,25 +1621,25 @@ data['code'][9] = [
 			Insn('CHAR_WATCH', Char(8), Char(10), 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P哈哈。恭喜你，贝奈特。{wait}'
+				'#14709F#2P哈哈。恭喜你，贝奈特。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('FORK_QUIT', Char(10), 1),
 			Insn('CHAR_WATCH', Char(10), Char(8), 500),
 			Insn('SLEEP', 500),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P什、什么嘛……\n'
+				'#14805F#3P什、什么嘛……\n'
 				'你不觉得不甘心吗？{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P嗯？不会啊。\n'
+				'#14704F#2P嗯？不会啊。\n'
 				'因为我也做了\n'
 				'自己觉得满意的新面包。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'#2P再说，贝奈特的面包\n'
+				'#14702F#2P再说，贝奈特的面包\n'
 				'的确做得很好。\n'
 				'既好吃，也能让人了解里面包含了她的心意。{wait}'
 			)),
@@ -1648,13 +1648,13 @@ data['code'][9] = [
 			Insn('SLEEP', 1000),
 			Insn('EMOTE_STOP', Char(10)),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P什、什么嘛……\n'
+				'#14813F#3P什、什么嘛……\n'
 				'就算你大力称赞我，\n'
 				'我也不会感谢你……{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(10), Text(
-				'#3P……这、这次能够获胜，\n'
+				'#14808F#3P……这、这次能够获胜，\n'
 				'也有罗伊德他们搜集的材料\n'
 				'很好的因素在里面……{wait}'
 			)),
@@ -1662,7 +1662,7 @@ data['code'][9] = [
 			Insn('IF', [
 				(Expr([Insn('FLAG', Flag(1105)), Insn('END')]), [
 					Insn('TEXT_TALK', Char(10), Text(
-						'#3P如果没有『{item 326}』的话，\n'
+						'#14804F#3P如果没有『{item 326}』的话，\n'
 						'老实说，\n'
 						'我想我不会获胜……{wait}'
 					)),
@@ -1675,12 +1675,12 @@ data['code'][9] = [
 		],
 	}),
 	Insn('TEXT_TALK', Char(8), Text(
-		'#2P哈哈！今后也\n'
+		'#14709F#2P哈哈！今后也\n'
 		'彼此都加油吧。{wait}'
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_TALK', Char(10), Text(
-		'#3P如、如果你都这么说的话，\n'
+		'#14813F#3P如、如果你都这么说的话，\n'
 		'要这么做也可以……{wait}'
 	)),
 	Insn('TEXT_WAIT'),
@@ -1736,7 +1736,7 @@ data['code'][10] = [
 				(Expr([Insn('FLAG', Flag(0)), Insn('NOT'), Insn('END')]), [
 					Insn('FLAG_SET', Flag(0)),
 					Insn('TEXT_TALK', Char(8), Text(
-						'嗨，罗伊德。\n'
+						'#14702F嗨，罗伊德。\n'
 						'我们店里有提出委托，\n'
 						'你有看到吗？{wait}'
 					)),
@@ -1747,29 +1747,29 @@ data['code'][10] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'没错。\n'
+						'#14704F没错。\n'
 						'虽然我对比赛或胜负\n'
 						'没有太大兴趣……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'只是贝奈特对这次比赛\n'
+						'#14700F只是贝奈特对这次比赛\n'
 						'好像很积极。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'不过，制作终极面包\n'
+						'#14709F不过，制作终极面包\n'
 						'很有趣。\n'
 						'以面包师傅来说，会令人跃跃欲试。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'就是这样，如果你能接下委托的话，\n'
+						'#14702F就是这样，如果你能接下委托的话，\n'
 						'我会很高兴。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'总之，详细内容去问\n'
+						'#14700F总之，详细内容去问\n'
 						'里面的老板吧。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -1779,14 +1779,14 @@ data['code'][10] = [
 		]),
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 58, Insn('TASK_GET', 4))), Insn('NOT'), Insn('END')]), [
 			Insn('TEXT_TALK', Char(8), Text(
-				'嗨，罗伊德。\n'
+				'#14702F嗨，罗伊德。\n'
 				'材料搜集得还顺利吗？{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(8), Text(
-				'托罗伊德你们的福，\n'
+				'#14709F托罗伊德你们的福，\n'
 				'似乎可以做出不错的新面包。\n'
 				'以面包师傅来说，会令人跃跃欲试。{wait}'
 			)),
@@ -1801,12 +1801,12 @@ data['code'][11] = [
 	Insn('IF', [
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 58, Insn('TASK_GET', 1))), Insn('NOT'), Insn('END')]), [
 			Insn('TEXT_TALK', Char(8), Text(
-				'如果你能接下委托的话，\n'
+				'#14702F如果你能接下委托的话，\n'
 				'我会很高兴。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'总之，详细内容去问\n'
+				'#14700F总之，详细内容去问\n'
 				'里面的老板吧。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -1816,24 +1816,24 @@ data['code'][11] = [
 			Insn('IF', [
 				(Expr([Insn('VAR', 0), Insn('CONST', 1), Insn('NE'), Insn('END')]), [
 					Insn('TEXT_TALK', Char(8), Text(
-						'以面包师傅来说，\n'
+						'#14704F以面包师傅来说，\n'
 						'创作新面包是一件\n'
 						'很需要干劲的工作呢。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'……虽然这么说，\n'
+						'#14702F……虽然这么说，\n'
 						'不过这次的新面包，\n'
 						'我总觉得还差一点冲击。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'该怎么说呢？要是能多加入一些\n'
+						'#14703F该怎么说呢？要是能多加入一些\n'
 						'『热情』就好了……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'哎呀，不过这是我的问题。\n'
+						'#14700F哎呀，不过这是我的问题。\n'
 						'材料搜集就拜托\n'
 						'罗伊德你们了！{wait}'
 					)),
@@ -1843,7 +1843,7 @@ data['code'][11] = [
 				(Expr([Insn('FLAG', Flag(0)), Insn('NOT'), Insn('END')]), [
 					Insn('FLAG_SET', Flag(0)),
 					Insn('TEXT_TALK', Char(8), Text(
-						'哦，罗伊德。\n'
+						'#14702F哦，罗伊德。\n'
 						'食材搜集得怎样了？{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -1853,17 +1853,17 @@ data['code'][11] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'哦！不愧是罗伊德。\n'
+						'#14709F哦！不愧是罗伊德。\n'
 						'办事效率真高！{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'这么一来，我就可以投入\n'
+						'#14702F这么一来，我就可以投入\n'
 						'制作新面包的准备了。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'谢啦，罗伊德。\n'
+						'#14709F谢啦，罗伊德。\n'
 						'果然你很值得依赖呢。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -1874,28 +1874,28 @@ data['code'][11] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'啊，对了。我差点忘了。\n'
+						'#14702F啊，对了。我差点忘了。\n'
 						'材料交给在里面的老板吧。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'委托的报酬应该也可以\n'
+						'#14700F委托的报酬应该也可以\n'
 						'从老板那拿到。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'……{wait}'
+						'#14703F……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 				]),
 				(None, [
 					Insn('TEXT_TALK', Char(8), Text(
-						'材料交给在里面的老板吧。\n'
+						'#14700F材料交给在里面的老板吧。\n'
 						'应该可以拿到委托的报酬。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'……{wait}'
+						'#14703F……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(257), Text(
@@ -1904,22 +1904,22 @@ data['code'][11] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'嗯，难得你帮忙准备材料，\n'
+						'#14706F嗯，难得你帮忙准备材料，\n'
 						'我还说这种话，真的很抱歉，不过……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'这次的新面包，\n'
+						'#14701F这次的新面包，\n'
 						'我总觉得还差一点冲击。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'该怎么说，要是能多加入一些\n'
+						'#14703F该怎么说，要是能多加入一些\n'
 						'『热情』就好了……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(8), Text(
-						'嗯～有点过于模糊了对吧？\n'
+						'#14700F嗯～有点过于模糊了对吧？\n'
 						'抱歉，你别放在心上！{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -1930,24 +1930,24 @@ data['code'][11] = [
 		(Expr([Insn('FLAG', Flag(0)), Insn('NOT'), Insn('END')]), [
 			Insn('FLAG_SET', Flag(0)),
 			Insn('TEXT_TALK', Char(8), Text(
-				'我马上就开始投入\n'
+				'#14702F我马上就开始投入\n'
 				'制作新面包的准备吧。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'你就期待面包出炉吧！{wait}'
+				'#14709F你就期待面包出炉吧！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(8), Text(
-				'贝奈特那家伙，\n'
+				'#14700F贝奈特那家伙，\n'
 				'似乎马上就开始\n'
 				'准备作新面包了。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'我也很期待，想知道\n'
+				'#14702F我也很期待，想知道\n'
 				'她会做出怎样的面包呢。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -1960,19 +1960,19 @@ data['code'][12] = [
 	Insn('IF', [
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 58, Insn('TASK_GET', 9))), Insn('END')]), [
 			Insn('TEXT_TALK', Char(8), Text(
-				'托新面包的福，\n'
+				'#14702F托新面包的福，\n'
 				'客人也增加许多了。\n'
 				'谢谢你，罗伊德。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'只不过，\n'
+				'#14703F只不过，\n'
 				'贝奈特那家伙\n'
 				'感觉非常后悔……{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'不管是哪边获胜，\n'
+				'#14700F不管是哪边获胜，\n'
 				'我觉得只要\n'
 				'客人有增加就好。{wait}'
 			)),
@@ -1980,13 +1980,13 @@ data['code'][12] = [
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(8), Text(
-				'托新面包的福，\n'
+				'#14702F托新面包的福，\n'
 				'客人也增加许多了。\n'
 				'谢谢你。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(8), Text(
-				'贝奈特那家伙\n'
+				'#14704F贝奈特那家伙\n'
 				'也很感谢罗伊德。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -1999,12 +1999,12 @@ data['code'][13] = [
 	Insn('IF', [
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 58, Insn('TASK_GET', 1))), Insn('NOT'), Insn('END')]), [
 			Insn('TEXT_TALK', Char(254), Text(
-				'从我的角度来看，\n'
+				'#14803F从我的角度来看，\n'
 				'我跟奥斯卡的本领不相上下……{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(254), Text(
-				'正因为如此……\n'
+				'#14807F正因为如此……\n'
 				'就用这次比赛来一决高下吧！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -2016,13 +2016,13 @@ data['code'][13] = [
 					Insn('IF', [
 						(Expr([Insn('FLAG', Flag(2)), Insn('NOT'), Insn('END')]), [
 							Insn('TEXT_TALK', Char(254), Text(
-								'嘀咕嘀咕……\n'
+								'#14803F嘀咕嘀咕……\n'
 								'要让吃的人感动……\n'
 								'眼泪……？『痛哭』……？{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(254), Text(
-								'……啊，对、对不起。\n'
+								'#14805F……啊，对、对不起。\n'
 								'我正在思考\n'
 								'新面包的点子。{wait}'
 							)),
@@ -2032,13 +2032,13 @@ data['code'][13] = [
 						]),
 						(None, [
 							Insn('TEXT_TALK', Char(254), Text(
-								'如果是这次构思中的\n'
+								'#14804F如果是这次构思中的\n'
 								'新面包，一定可以做得比\n'
 								'奥斯卡更好吃……{wait}'
 							)),
 							Insn('TEXT_WAIT'),
 							Insn('TEXT_TALK', Char(254), Text(
-								'……为了这个目标，\n'
+								'#14807F……为了这个目标，\n'
 								'我无论如何都需要那个材料。\n'
 								'因为我不想输给奥斯卡……！{wait}'
 							)),
@@ -2055,14 +2055,14 @@ data['code'][13] = [
 					Insn('EMOTE', Char(10), 0, 2000, (24, 27, 250, 1)),
 					Insn('SLEEP', 1200),
 					Insn('TEXT_TALK', Char(254), Text(
-						'嘀咕嘀咕……到底、到底\n'
+						'#14803F嘀咕嘀咕……到底、到底\n'
 						'是什么不够呢？嗯……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('EMOTE', Char(10), 0, 2000, (38, 38, 250, 1)),
 					Insn('SLEEP', 1000),
 					Insn('TEXT_TALK', Char(254), Text(
-						'哎、哎呀呀，是你们啊……\n'
+						'#14800F哎、哎呀呀，是你们啊……\n'
 						'搜集食材这件事有进展吗？{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -2072,40 +2072,40 @@ data['code'][13] = [
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'这、这样啊！\n'
+						'#14805F这、这样啊！\n'
 						'比我想像中的还快呢！{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'把材料交给在工房里的\n'
+						'#14810F把材料交给在工房里的\n'
 						'爸爸就可以了。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'……{wait}'
+						'#14803F……{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 				]),
 				(None, [
 					Insn('TEXT_TALK', Char(254), Text(
-						'嘀咕嘀咕……\n'
+						'#14803F嘀咕嘀咕……\n'
 						'要让吃的人感动……\n'
 						'眼泪……？『痛哭』……？{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'……啊，对、对不起。\n'
+						'#14805F……啊，对、对不起。\n'
 						'我正在思考\n'
 						'新面包的点子。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'把材料交给工房里的\n'
+						'#14810F把材料交给工房里的\n'
 						'爸爸吧。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
 					Insn('TEXT_TALK', Char(254), Text(
-						'还、还有，呃……\n'
+						'#14817F还、还有，呃……\n'
 						'谢谢你的帮忙。{wait}'
 					)),
 					Insn('TEXT_WAIT'),
@@ -2116,40 +2116,40 @@ data['code'][13] = [
 		(Expr([Insn('FLAG', Flag(2)), Insn('NOT'), Insn('END')]), [
 			Insn('FLAG_SET', Flag(2)),
 			Insn('TEXT_TALK', Char(254), Text(
-				'奥斯卡\n'
+				'#14803F奥斯卡\n'
 				'似乎开始\n'
 				'制作新面包了。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(254), Text(
-				'我也不能输给他。\n'
+				'#14807F我也不能输给他。\n'
 				'我绝对会赢过他……！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(254), Text(
-				'……{wait}'
+				'#14803F……{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(254), Text(
-				'……谢、谢谢你，罗伊德。\n'
+				'#14810F……谢、谢谢你，罗伊德。\n'
 				'还有各位也是。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(254), Text(
-				'……敬、敬请期待哦。\n'
+				'#14802F……敬、敬请期待哦。\n'
 				'我会做出好面包的。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(254), Text(
-				'只要能完成我现在构思中的\n'
+				'#14809F只要能完成我现在构思中的\n'
 				'新面包，肯定能赢过奥斯卡。\n'
 				'呵呵……真令人期待。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(254), Text(
-				'……我、我打从心底\n'
+				'#14810F……我、我打从心底\n'
 				'感谢各位。\n'
 				'……非常谢谢你们。{wait}'
 			)),
@@ -2163,12 +2163,12 @@ data['code'][14] = [
 	Insn('IF', [
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 58, Insn('TASK_GET', 10))), Insn('END')]), [
 			Insn('TEXT_TALK', Char(10), Text(
-				'呵呵……我总算\n'
+				'#14809F呵呵……我总算\n'
 				'赢过奥斯卡了！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(10), Text(
-				'……不过，\n'
+				'#14801F……不过，\n'
 				'奥斯卡那家伙居然恭喜我……\n'
 				'真让人搞不懂……{wait}'
 			)),
@@ -2176,12 +2176,12 @@ data['code'][14] = [
 		]),
 		(Expr([Insn('EXEC', Insn('QUEST_GET', 58, Insn('TASK_GET', 11))), Insn('END')]), [
 			Insn('TEXT_TALK', Char(10), Text(
-				'没想到居然会平手……\n'
+				'#14806F没想到居然会平手……\n'
 				'明明这次就可以分出胜负了！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(10), Text(
-				'非常好。\n'
+				'#14804F非常好。\n'
 				'在下次比赛之前，我会更加更加磨练技术，\n'
 				'绝──对要让你认输！{wait}'
 			)),
@@ -2189,17 +2189,17 @@ data['code'][14] = [
 		]),
 		(None, [
 			Insn('TEXT_TALK', Char(10), Text(
-				'真、真不甘心！\n'
+				'#14806F真、真不甘心！\n'
 				'我又输了……！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(10), Text(
-				'……但是，这次是输在材料差别。\n'
+				'#14807F……但是，这次是输在材料差别。\n'
 				'技术上我可没有输！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('TEXT_TALK', Char(10), Text(
-				'迟早我绝对会\n'
+				'#14813F迟早我绝对会\n'
 				'一雪前耻……！{wait}'
 			)),
 			Insn('TEXT_WAIT'),
@@ -2210,7 +2210,7 @@ data['code'][14] = [
 
 data['code'][15] = [
 	Insn('TEXT_TALK', Char(8), Text(
-		'{item 300}#3P\u3000\u3000\u3000×５\n'
+		'#14700F{item 300}#3P\u3000\u3000\u3000×５\n'
 		'{item 306}\u3000\u3000\u3000×３\n'
 		'{item 357}\u3000\u3000\u3000\u3000×３吧！{wait}'
 	)),
@@ -2220,7 +2220,7 @@ data['code'][15] = [
 
 data['code'][16] = [
 	Insn('TEXT_TALK', Char(10), Text(
-		'{item 301}#3P\u3000\u3000×３\n'
+		'#14800F{item 301}#3P\u3000\u3000×３\n'
 		'{item 303}\u3000\u3000×５\n'
 		'{item 356}\u3000×３哦！{wait}'
 	)),

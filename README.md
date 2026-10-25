@@ -4,7 +4,7 @@
 
 本 Fork 在上游 [Kyuuhachi/Inevitable-Zero](https://github.com/Kyuuhachi/Inevitable-Zero) 的基础上，加入 NISA PC 版《零之轨迹》简体中文构建路径，用于兼容 zeroTool 汉化及其汉化版 More Portraits。
 
-最新中文兼容测试版为 [v0.2.0-rc1 Pre-release](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.2.0-rc1)，基于 NISA Steam 1.5.5（build 24743052）、zeroTool 零轨汉化 1.9 与 More Portraits in Zero 1.6.0 刷新。仓库公开内容限于本 MOD 涉及的任务记录、完整合并脚本和构建所需映射，不是整个游戏的数据镜像。
+最新中文兼容测试版为 [v0.2.1-rc1 Pre-release](https://github.com/lmaple0/Inevitable-Zero/releases/tag/v0.2.1-rc1)，基于 NISA Steam 1.5.5（build 24743052）、zeroTool 零轨汉化 1.9 与 More Portraits in Zero 1.6.0。此版补齐“终极面包对决！”中奥斯卡、贝奈特的 99 处头像表情调用；[更新与已知问题](RELEASE_NOTES_v0.2.1-rc1.md)。仓库公开内容限于本 MOD 涉及的任务记录、完整合并脚本和构建所需映射，不是整个游戏的数据镜像。
 
 ## 覆盖任务
 
@@ -49,6 +49,9 @@ data_cn/text
 
 ## 当前状态
 
+- v0.2.1-rc1 修正稿位于 `text/cn/scena/c0210_1.py`，可由下述 `build_cn_scenarios.py` 入口直接重建；此入口是本次头像修正版的源码复现路径。
+- 新增的 99 处头像调用已核对本机资源；改动场景完成编译、反编译及字节往返验证，正文、任务逻辑与原有头像不变。
+- 当前汉化环境的 Message Log 可能错误显示动态物品名称；实时奖励提示正常。该问题已反馈给汉化作者，本次 RC 未包含日志兼容修复。
 - 39 个任务相关脚本已从当前本机汉化与 More Portraits 1.6.0 基线重新合并并完成静态构建。
 - Kreuzen 往返验证结果为 39/39 可解析，其中 36 个字节一致，`r0000.bin`、`r1000.bin`、`r1500.bin` 为 3 个已知布局归一化差异，0 个失败。
 - `t_quest._dt` 已包含五个简体中文任务名。
