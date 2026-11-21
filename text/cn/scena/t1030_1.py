@@ -120,7 +120,7 @@ data['code'][1] = [
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_TALK', Char(259), Text(
-		'#0207F该不会……是被诱旋了吧？{wait}'
+		'#0207F该不会……是被诱拐了吧？{wait}'
 		'{page}'
 		'#0201F想要在自己家里把玩\n'
 		'可爱的咪西……\n'
@@ -253,7 +253,7 @@ data['code'][4] = [
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_TALK', Char(259), Text(
-		'#0201F但是，如果是诱旋的话，\n'
+		'#0201F但是，如果是诱拐的话，\n'
 		'也有可能会坐船吧。{wait}'
 		'{page}'
 		'我想先到停船处\n'
@@ -1451,7 +1451,7 @@ data['code'][18] = [
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_TALK', Char(260), Text(
-		'#0309F我们还以为是诱旋之类的，\n'
+		'#0309F我们还以为是诱拐之类的，\n'
 		'结果居然是这样，太夸张了啦，\n'
 		'对吧？小缇？{wait}'
 	)),

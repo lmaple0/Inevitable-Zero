@@ -859,7 +859,7 @@ data['code'][9] = [
 			Insn('TEXT_TALK', Char(254), Text(
 				'是这样吗……\n'
 				'主任的确老是在发呆，\n'
-				'看起来很好诱旋。{wait}'
+				'看起来很好诱拐。{wait}'
 			)),
 			Insn('TEXT_WAIT'),
 			Insn('EMOTE', Char(0), 0, 2000, (16, 19, 250, 1)),
@@ -872,7 +872,7 @@ data['code'][9] = [
 			Insn('SOUND_PLAY', 23, 0, 0, 100),
 			Insn('SLEEP', 1000),
 			Insn('TEXT_TALK', Char(254), Text(
-				'不过，就算诱旋主任又能怎样……对吧？\n'
+				'不过，就算诱拐主任又能怎样……对吧？\n'
 				'再说，她也没有神经质到\n'
 				'会搞失踪啊。{wait}'
 			)),
@@ -1316,13 +1316,13 @@ data['code'][16] = [
 		(None, []),
 	]),
 	Insn('TEXT_TALK', Char(254), Text(
-		'穿着白衣的医师……？\n'
+		'#15203F穿着白衣的医师……？\n'
 		'这么说来，\n'
 		'早上巡逻时我有看到。{wait}'
 	)),
 	Insn('TEXT_WAIT'),
 	Insn('TEXT_TALK', Char(254), Text(
-		'我记得她是走向\n'
+		'#15200F我记得她是走向\n'
 		'行政区的方向。{wait}'
 	)),
 	Insn('TEXT_WAIT'),
